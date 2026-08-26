@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>RoteCat 개인정보처리방침 | Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --accent:#f57c00; --card:#fff; --text:#172033; --muted:#5f6878; --line:#e4e7ec; --bg:#f6f7f9; }
+    @media (prefers-color-scheme:dark) { :root { --card:#171a20; --text:#f1f3f5; --muted:#b4bac5; --line:#343944; --bg:#0f1115; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Roboto,Arial,sans-serif; line-height:1.72; }
+    main { width:min(900px,calc(100% - 32px)); margin:32px auto; padding:40px; background:var(--card); border:1px solid var(--line); border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,.06); }
+    h1 { margin:0 0 8px; font-size:clamp(1.8rem,5vw,2.5rem); line-height:1.25; }
+    h2 { margin:34px 0 10px; padding-bottom:8px; border-bottom:1px solid var(--line); font-size:1.25rem; }
+    p, li { color:var(--text); }
+    .muted { color:var(--muted); }
+    .notice { margin:24px 0; padding:18px 20px; border-left:5px solid var(--accent); border-radius:10px; background:color-mix(in srgb,var(--accent) 10%,var(--card)); }
+    nav { display:flex; gap:8px; margin:24px 0; }
+    button { border:1px solid var(--line); border-radius:999px; padding:8px 16px; background:var(--card); color:var(--text); cursor:pointer; font-weight:700; }
+    button.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+    section[hidden] { display:none; }
+    a { color:var(--accent); }
+    ul { padding-left:22px; }
+    footer { margin-top:36px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:.92rem; }
+    @media (max-width:600px) { main { margin:0; width:100%; min-height:100vh; padding:26px 20px; border:0; border-radius:0; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>RoteCat 개인정보처리방침</h1>
+  <p class="muted">Privacy Policy · 시행일: 2026년 8월 26일</p>
+  <nav aria-label="Language">
+    <button id="koButton" class="active" type="button" onclick="showLanguage('ko')">한국어</button>
+    <button id="enButton" type="button" onclick="showLanguage('en')">English</button>
+  </nav>
+
+  <section id="ko">
+    <p>이석희(이하 “개발자”)는 RoteCat(패키지명: <strong>app.rotecat</strong>, 이하 “앱”) 이용자의 개인정보를 중요하게 생각합니다. 이 방침은 앱이 처리하는 정보와 그 목적을 설명합니다.</p>
+
+    <div class="notice">
+      <strong>접근성 서비스 중요 고지</strong><br>
+      앱은 YouTube의 일반 동영상이 전체화면으로 전환되었는지 확인하고 화면 방향을 자동으로 변경하기 위해 접근성 서비스를 사용합니다. 이 기능은 사용자가 앱에서 직접 켜고 접근성 권한을 허용한 경우에만 동작합니다. 접근성 서비스로 확인한 정보는 기기 안에서만 즉시 처리되며 개발자 서버나 광고 사업자에게 전송되지 않습니다.
+    </div>
+
+    <h2>1. 앱이 처리하는 정보</h2>
+    <ul>
+      <li><strong>접근성 이벤트:</strong> 현재 표시 중인 앱/창 정보와 YouTube 화면의 구조·영역 정보를 확인하여 일반 동영상의 전체화면 여부를 판단하고 Shorts 화면을 회전 대상에서 제외합니다.</li>
+      <li><strong>기기 방향 정보:</strong> 기기의 물리적 방향과 현재 화면 방향을 일시적으로 확인하여 적절한 가로 방향을 선택합니다.</li>
+      <li><strong>기기 내 설정:</strong> 기능의 켜짐/꺼짐 상태, 위젯 동작 대기 시간, 화면 회전 복구를 위한 기존 자동 회전 설정 및 회전 방향을 기기에 저장합니다.</li>
+      <li><strong>광고 관련 정보:</strong> 무료 버전에서 광고가 제공되는 경우 Google Mobile Ads SDK가 광고 식별자, IP 주소, 대략적인 위치, 기기 및 앱 정보, 광고 상호작용 정보와 진단 정보를 처리할 수 있습니다.</li>
+      <li><strong>구매 관련 정보:</strong> 광고 제거 상품을 구매하면 Google Play가 결제를 처리하며, 앱은 광고 제거 및 구매 복원을 위해 상품 식별자와 구매 상태 등의 정보를 처리할 수 있습니다. 개발자는 카드 번호나 은행 계좌 정보를 직접 수집하지 않습니다.</li>
+    </ul>
+    <p>앱은 접근성 서비스를 통해 입력한 글, 비밀번호, 메시지, 영상 내용 또는 웹 방문 기록을 수집할 목적으로 설계되지 않았으며, 이러한 정보를 개발자 서버에 저장하거나 전송하지 않습니다.</p>
+
+    <h2>2. 정보 이용 목적</h2>
+    <ul>
+      <li>YouTube 일반 동영상의 전체화면 진입 및 종료 감지</li>
+      <li>화면 방향 자동 변경과 원래 회전 설정 복구</li>
+      <li>홈 화면 위젯 및 사용자 설정 제공</li>
+      <li>광고 표시, 동의 관리, 광고 제거 구매 및 복원</li>
+      <li>오류 방지, 보안 유지 및 서비스 개선</li>
+    </ul>
+
+    <h2>3. 권한 및 민감한 API</h2>
+    <ul>
+      <li><strong>접근성 서비스:</strong> YouTube 전체화면 상태와 Shorts 여부를 기기 내에서 판별합니다.</li>
+      <li><strong>시스템 설정 변경 권한:</strong> 자동 회전과 화면 방향을 변경하고 기능 종료 시 기존 설정으로 복구합니다.</li>
+      <li><strong>인터넷 및 네트워크 권한:</strong> 광고, 광고 동의 관리 및 Google Play 결제 기능에 사용될 수 있습니다.</li>
+    </ul>
+    <p>접근성 서비스는 장애 지원 도구라고 주장하기 위한 것이 아니며, 위에 설명한 화면 회전 자동화 기능에만 사용됩니다.</p>
+
+    <h2>4. 제3자 서비스 및 정보 공유</h2>
+    <p>앱은 광고 및 결제를 위해 Google AdMob, Google User Messaging Platform(UMP), Google Play 결제 서비스를 사용할 수 있습니다. 이 과정에서 Google은 자체 개인정보처리방침에 따라 정보를 처리할 수 있습니다.</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 개인정보처리방침</a></li>
+      <li><a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">Google의 광고 데이터 이용 안내</a></li>
+    </ul>
+    <p>개발자는 개인정보를 판매하지 않습니다. 접근성 서비스로 확인한 화면 정보는 광고 맞춤설정에 사용하거나 광고 사업자와 공유하지 않습니다. 법령 준수, 이용자 보호 또는 보안상 필요한 경우를 제외하고 개인정보를 임의로 제3자에게 제공하지 않습니다.</p>
+
+    <h2>5. 보관 및 삭제</h2>
+    <p>앱 설정과 회전 복구 정보는 이용자의 기기에 보관되며, 앱 데이터 삭제 또는 앱 제거를 통해 삭제할 수 있습니다. 광고 및 결제 사업자가 처리하는 정보의 보관 기간과 삭제 방법은 각 사업자의 정책을 따릅니다. 별도의 회원 계정을 만들지 않으므로 개발자가 보관하는 계정 정보는 없습니다.</p>
+
+    <h2>6. 보안</h2>
+    <p>개발자는 필요한 정보만 최소한으로 처리하고, 접근성 및 방향 판별 정보를 가능한 한 기기 내에서 처리합니다. 다만 어떠한 전자적 처리 방식도 절대적인 안전을 보장할 수는 없습니다.</p>
+
+    <h2>7. 아동의 개인정보</h2>
+    <p>앱은 아동을 대상으로 제작되지 않았으며, 개발자는 아동의 개인정보를 고의로 수집하지 않습니다. 관련 사실을 알게 되면 가능한 범위에서 신속히 조치합니다.</p>
+
+    <h2>8. 방침 변경</h2>
+    <p>기능, 사용 SDK 또는 법적 요구사항이 변경되면 이 방침을 수정할 수 있습니다. 중요한 변경 사항은 앱 또는 이 페이지를 통해 알리고 시행일을 갱신합니다.</p>
+
+    <h2>9. 문의</h2>
+    <p>개인정보 관련 문의: <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p>
+  </section>
+
+  <section id="en" lang="en" hidden>
+    <p>Lee Seokhee (the “Developer”) respects the privacy of users of RoteCat (package name: <strong>app.rotecat</strong>, the “App”). This policy explains what information the App processes and why.</p>
+
+    <div class="notice">
+      <strong>Important Accessibility Service Disclosure</strong><br>
+      The App uses an Accessibility Service to determine whether a regular YouTube video has entered full screen and to change the screen orientation automatically. It operates only after the user turns on the feature in the App and grants accessibility access. Information observed through the service is processed immediately and locally on the device and is not sent to the Developer's servers or advertising providers.
+    </div>
+
+    <h2>1. Information processed by the App</h2>
+    <ul>
+      <li><strong>Accessibility events:</strong> The App observes the current app/window and the structure and bounds of YouTube interface elements to determine whether a regular video is full screen and to exclude Shorts from rotation.</li>
+      <li><strong>Device orientation:</strong> The physical device orientation and current display orientation are checked temporarily to select the appropriate landscape direction.</li>
+      <li><strong>On-device settings:</strong> The App stores its enabled state, widget cooldown state, and the previous auto-rotate setting and rotation value needed for recovery.</li>
+      <li><strong>Advertising information:</strong> When ads are provided in the free version, the Google Mobile Ads SDK may process advertising identifiers, IP address, approximate location, device and app information, ad interactions, and diagnostics.</li>
+      <li><strong>Purchase information:</strong> Google Play processes payments for the ad-removal product. The App may process a product identifier and purchase status to remove ads and restore purchases. The Developer does not directly collect payment card or bank account details.</li>
+    </ul>
+    <p>The App is not designed to collect text you type, passwords, messages, video content, or web browsing history through the Accessibility Service, and it does not store or transmit such information to the Developer's servers.</p>
+
+    <h2>2. Purposes of processing</h2>
+    <ul>
+      <li>Detect entering and leaving full screen for regular YouTube videos</li>
+      <li>Change screen orientation and restore the previous rotation settings</li>
+      <li>Provide the home-screen widget and user preferences</li>
+      <li>Display ads, manage consent, and process or restore ad-removal purchases</li>
+      <li>Prevent errors, maintain security, and improve the service</li>
+    </ul>
+
+    <h2>3. Permissions and sensitive APIs</h2>
+    <ul>
+      <li><strong>Accessibility Service:</strong> Identifies YouTube full-screen state and Shorts locally on the device.</li>
+      <li><strong>Modify system settings:</strong> Changes auto-rotate and display orientation and restores the previous settings when the feature ends.</li>
+      <li><strong>Internet and network access:</strong> May be used for advertising, consent management, and Google Play Billing.</li>
+    </ul>
+    <p>The Accessibility Service is not presented as an accessibility aid and is used only for the screen-rotation automation described above.</p>
+
+    <h2>4. Third-party services and sharing</h2>
+    <p>The App may use Google AdMob, Google User Messaging Platform (UMP), and Google Play Billing for advertising and payments. Google may process information under its own privacy policy.</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a></li>
+      <li><a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">How Google uses information for advertising</a></li>
+    </ul>
+    <p>The Developer does not sell personal information. Screen information observed by the Accessibility Service is not used for ad personalization or shared with advertising providers. Personal information is not disclosed to third parties except when reasonably necessary to comply with law, protect users, or maintain security.</p>
+
+    <h2>5. Retention and deletion</h2>
+    <p>App preferences and rotation recovery information remain on the user's device and can be deleted by clearing the App's data or uninstalling the App. Information processed by advertising and payment providers is retained and deleted under their respective policies. The App does not create a user account, so the Developer does not retain account information.</p>
+
+    <h2>6. Security</h2>
+    <p>The Developer limits processing to what is necessary and keeps accessibility and orientation analysis on the device wherever possible. However, no electronic processing method can guarantee absolute security.</p>
+
+    <h2>7. Children's privacy</h2>
+    <p>The App is not directed to children, and the Developer does not knowingly collect personal information from children. If such collection becomes known, reasonable steps will be taken promptly.</p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>This policy may be updated when the App's features, SDKs, or legal requirements change. Material changes will be announced through the App or this page, and the effective date will be updated.</p>
+
+    <h2>9. Contact</h2>
+    <p>Privacy inquiries: <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p>
+  </section>
+
+  <footer>RoteCat · Last updated August 26, 2026</footer>
+</main>
+<script>
+  function showLanguage(language) {
+    const korean = language === 'ko';
+    document.getElementById('ko').hidden = !korean;
+    document.getElementById('en').hidden = korean;
+    document.getElementById('koButton').classList.toggle('active', korean);
+    document.getElementById('enButton').classList.toggle('active', !korean);
+    document.documentElement.lang = language;
+  }
+</script>
+</body>
+</html>
+
