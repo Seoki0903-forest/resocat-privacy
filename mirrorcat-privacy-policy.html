@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MirrorCat 개인정보처리방침 / Privacy Policy — Android 화면 공유와 PC 입력 제어">
+<title>MirrorCat 개인정보처리방침 | Privacy Policy</title>
+<style>
+:root{color-scheme:light dark;--bg:#f5f7fb;--card:#fff;--text:#202938;--muted:#586579;--line:#dbe2ed;--accent:#3455c5}
+@media(prefers-color-scheme:dark){:root{--bg:#11151d;--card:#1b2230;--text:#eef2fa;--muted:#b9c4d6;--line:#374356;--accent:#afc1ff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.8 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:940px;margin:36px auto;padding:40px;background:var(--card);border:1px solid var(--line);border-radius:20px}
+h1{font-size:2rem;line-height:1.35;margin:0 0 12px}h2{font-size:1.25rem;margin:32px 0 8px}h3{font-size:1.05rem;margin:20px 0 6px}
+p{margin:10px 0}a{color:var(--accent);overflow-wrap:anywhere}nav{display:flex;gap:16px;flex-wrap:wrap;padding:15px 0;border-bottom:1px solid var(--line)}
+.meta{color:var(--muted)}.note{border-left:4px solid var(--accent);padding:12px 18px;background:var(--bg)}ul{padding-left:24px}li{margin:7px 0}
+.contact{border:1px solid var(--line);border-radius:12px;padding:18px}section{scroll-margin-top:24px}hr{border:0;border-top:1px solid var(--line);margin:48px 0}
+@media(max-width:640px){main{margin:0;border:0;border-radius:0;padding:26px 20px}h1{font-size:1.65rem}}
+</style>
+</head>
+<body><main>
+<header><h1>MirrorCat 개인정보처리방침</h1>
+<p class="meta">시행일·최종 수정일: 2026년 10월 4일<br>Android 패키지: <strong>com.tabletcontrol</strong> · 적용 대상: MirrorCat Android 앱 및 연결되는 MirrorCat PC 앱</p>
+<nav aria-label="언어 선택"><a href="#ko" lang="ko">한국어</a><a href="#en" lang="en">English</a><a href="#contact">문의 / Contact</a></nav></header>
+
+<section id="ko" lang="ko">
+<h2>1. 운영자와 적용 범위</h2>
+<p>이석희(이하 “개발자”)는 MirrorCat 이용자의 개인정보를 중요하게 생각합니다. MirrorCat은 Android 기기의 화면과 재생 소리를 이용자가 연결한 PC에서 보고 듣고, PC의 키보드·마우스로 기기를 조작하도록 돕는 앱입니다. 이 방침은 앱이 접근·전송·저장하는 정보, 이용 목적, 보관 및 삭제 방법을 설명합니다.</p>
+<p class="note">MirrorCat은 현재 회원가입이나 개발자 운영 클라우드 계정 서비스를 제공하지 않습니다. 화면 공유·입력 제어 데이터는 연결된 기기 사이에서 처리됩니다. 그러나 광고 SDK 등 제3자 서비스가 처리하는 정보와 이용자가 직접 보내는 문의 내용까지 “전혀 수집하지 않는다”는 뜻은 아닙니다.</p>
+
+<h2>2. 처리하는 정보와 목적</h2>
+<h3>화면과 재생 소리</h3>
+<p>공유를 시작하면 화면 영상과 허용되는 게임·미디어의 재생 소리가 연결된 PC로 전송됩니다. 화면에는 다른 앱의 내용, 알림, 메시지 등 개인정보가 포함될 수 있으므로 공유 범위를 확인하십시오. 일반 공유 기능은 이 데이터를 개발자 서버에 업로드하거나 화면·음성을 녹화 파일로 자동 저장하지 않습니다.</p>
+<p>Wi-Fi 소리 공유는 Android의 재생 오디오 캡처를 사용합니다. <code>RECORD_AUDIO</code> 권한은 이 기능에 필요하며 현재 구현에서는 주변 소리나 이용자의 목소리를 수집하기 위한 마이크 녹음을 사용하지 않습니다. USB 공유는 ADB·scrcpy 전송 경로를 사용합니다. OS 버전과 다른 앱의 정책에 따라 소리 공유가 제한될 수 있습니다.</p>
+<h3>입력과 매핑</h3>
+<p>조작 중 PC 키보드·마우스 입력, 터치 위치, 누름·해제 상태가 Android 기기로 전달됩니다. 매핑 이름, 할당한 키·버튼, 터치 좌표, 감도, 선택한 매핑과 게임별 연결 설정은 조작과 자동 전환을 위해 사용됩니다. 매핑은 Android 앱의 비공개 저장소에 저장되며 PC는 연결 중 필요한 정보를 메모리에서 사용합니다. PC에 사용자 매핑을 영구 캐시로 저장하지 않습니다.</p>
+<h3>앱 정보와 자동 매핑</h3>
+<p>게임별 매핑 선택을 위해 Android가 조회를 허용한 설치 앱의 이름·패키지 정보와 현재 실행 앱의 패키지 정보를 처리할 수 있습니다. 필요한 정보는 연결된 PC에 전달되어 매핑 편집·자동 전환에 사용됩니다. 전체 앱 화면의 텍스트, 입력한 비밀번호나 메시지 내용을 접근성 서비스로 읽지 않으며, 앱 목록·현재 실행 앱 정보는 광고 맞춤화 목적으로 광고 사업자에게 제공하지 않습니다.</p>
+<h3>기기 검색·인증·이용기간</h3>
+<p>기기 모델·표시 이름, PC 이름, 로컬 IP 주소와 포트, USB 기기 식별 정보, 앱이 생성한 설치·검색 식별자, 연결 승인 및 인증서 정보 등을 연결 대상 확인과 재연결에 사용합니다. 기기 검색을 켜면 일부 검색 정보는 같은 네트워크의 다른 기기에 표시될 수 있습니다. 앱이 생성한 설치 식별자, 최초 실행 시각, 체험기간과 공유 세션의 이용시간·상태는 체험 및 시간 제한을 적용하기 위해 Android 기기에 저장되며 연결된 PC에 필요한 상태가 전달됩니다. PC에는 일반 설정과 연결 신뢰 정보가 저장될 수 있습니다.</p>
+
+<h2>3. 권한과 이용자 선택</h2>
+<ul>
+<li><strong>화면 공유:</strong> Wi-Fi 공유는 Android 화면 캡처 승인 후 시작됩니다. USB 공유에는 USB 디버깅과 해당 PC에 대한 Android 승인이 필요합니다.</li>
+<li><strong>접근성 서비스:</strong> 이용자가 직접 활성화하면 연결된 PC의 입력을 터치 제스처로 실행하고 창 전환 이벤트의 앱 패키지를 확인해 자동 매핑을 지원합니다. 서비스는 창 내용 조회 기능을 사용하지 않습니다. Android 접근성 설정에서 언제든 비활성화할 수 있습니다.</li>
+<li><strong>오디오 권한:</strong> 재생 소리 공유를 위해 요청합니다. 거부하면 소리가 전송되지 않거나 기능이 제한될 수 있습니다.</li>
+<li><strong>알림·포그라운드 서비스:</strong> 공유 상태 표시와 백그라운드 공유 유지를 위해 사용합니다. 알림 또는 앱의 종료 기능으로 공유를 중지할 수 있습니다.</li>
+<li><strong>네트워크:</strong> 같은 LAN의 기기 검색·통신과 Google 광고·동의·상품 정보 서비스에 사용됩니다.</li>
+</ul>
+<p>필요한 권한을 거부하면 해당 기능을 이용할 수 없거나 제한될 수 있습니다. 화면 공유 및 PC 조작을 종료하거나 PC 연결을 해제해 해당 전송을 중지할 수 있습니다. 접근성 권한은 공유 종료와 별도로 Android 설정에서 관리할 수 있습니다.</p>
+
+<h2>4. 연결·입력 진단과 문의</h2>
+<p>장애 분석을 위해 연결·종료 시각, 오류 종류, 연결 상태, 지연·전송량과 입력 처리 성공·실패 등의 기술 정보를 로컬에 기록할 수 있습니다. Android에는 최근 Wi-Fi 종료 요약이 저장될 수 있고 PC의 연결 로그는 크기를 제한해 순환 보관합니다. 정상 연결 로그에 사용자 매핑 문서, 화면 영상·음성, 키 입력 원문을 저장하지 않습니다.</p>
+<p>별도 입력 진단은 기본적으로 꺼져 있습니다. 명시적으로 활성화한 진단 세션에서는 시간, 입력 이벤트·좌표, 입력 전달과 처리 상태 등을 제한된 메모리에 일시 보관하고 연결된 PC에서 조회할 수 있습니다. 기본 진단은 최대 60초, 최대 4,096개 기록·2MiB로 제한되며 중지·만료·종료 시 정리됩니다. 운영자나 이용자가 별도 지원 절차에서 진단 자료를 파일로 내보내거나 전달한 경우, 그 사본은 메모리 정리와 함께 자동 삭제되지 않습니다.</p>
+<p>개발자에게 이메일로 문의하거나 진단 자료를 보내면 이메일 주소, 문의 내용과 직접 첨부한 파일을 문제 해결에 사용합니다. 비밀번호, 결제정보, 다른 사람의 메시지 또는 불필요한 화면 자료는 보내지 마십시오. 개발자에게 전달된 문의 자료는 대응 목적이 달성되면 삭제하며 법령상 보관 의무가 있는 자료는 해당 기간 보관합니다. 앱이 진단 자료를 개발자에게 자동 업로드하지는 않습니다.</p>
+
+<h2>5. Google 광고·동의 및 결제 관련 서비스</h2>
+<p>Android 앱에는 Google Mobile Ads(AdMob), User Messaging Platform(UMP), Google Play Billing SDK가 포함되어 있습니다. 현재 준비된 베타 빌드는 테스트 광고 ID를 사용하며 실제 구매 처리·구매복원은 연결되지 않았습니다. 테스트 광고를 포함해 SDK의 네트워크 통신에서 Google이 정보를 처리할 수 있습니다.</p>
+<p>Google 광고·동의 서비스는 SDK 버전·설정과 이용자의 선택에 따라 IP 주소와 대략적인 위치, 광고 식별자 또는 기타 식별자, 기기·앱 정보, 앱·광고 상호작용, 진단 및 동의 정보를 처리할 수 있습니다. 운영 광고가 활성화되는 버전에서는 적용되는 지역·설정에 따라 동의 안내와 개인정보 선택 화면이 제공됩니다. Google은 미국 등을 포함한 여러 국가에서 정보를 처리할 수 있으며 구체적 처리·보관과 이용자 권리는 Google 정책을 따릅니다.</p>
+<p>상품 정보 조회가 설정되면 Google Play를 통해 지역·통화에 맞는 상품 정보를 요청할 수 있습니다. 현재 앱은 카드번호·은행계좌 정보를 직접 받지 않습니다. 향후 실제 결제나 서버 기반 구매 검증을 도입하여 처리 항목이 바뀌면 이 방침과 필요한 고지를 갱신합니다.</p>
+<ul><li><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a></li><li><a href="https://policies.google.com/technologies/ads">Google 광고 및 정보 이용 안내</a></li><li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK 데이터 처리 안내</a></li></ul>
+
+<h2>6. 정보 전달과 보호</h2>
+<p>화면·재생 소리·입력·매핑 정보는 이용자가 승인한 연결 대상 PC 또는 Android 기기로 전달됩니다. 이 전송은 이용자가 요청한 기능을 수행하기 위한 것입니다. 개발자는 해당 정보를 광고 목적으로 판매하거나 개발자 클라우드에 전송하지 않습니다. 광고 SDK의 Google 전송과 이용자의 지원 자료 제출은 위 항목에 별도로 설명했습니다.</p>
+<p>직접 Wi-Fi 통신은 TLS와 기기 연결 확인을 사용합니다. USB는 Android가 승인한 ADB 경로를 이용합니다. 매핑 저장에는 Android 비공개 저장소와 암호화 기능을 사용하며 자동 클라우드 백업·기기 이전 대상에서 제외합니다. 승인한 PC와 USB 디버깅 권한을 관리하고, 신뢰할 수 없는 기기에 연결하지 마십시오. 어떤 보안 조치도 모든 위험을 완전히 제거하지는 않습니다.</p>
+
+<h2>7. 보관과 삭제·권리 행사</h2>
+<ul>
+<li><strong>영상·소리·일반 입력:</strong> 공유 처리에 필요한 동안 일시적으로 처리되며 일반 기능에서 자동 녹화·영구 저장하지 않습니다.</li>
+<li><strong>매핑·설정·체험·신뢰 정보:</strong> 기능 제공에 필요한 동안 기기에 보관됩니다. 매핑은 앱의 삭제 기능으로 삭제할 수 있고 Android 앱 데이터 삭제 또는 앱 제거 시 로컬 데이터가 삭제됩니다. 매핑은 자동 백업되지 않으므로 삭제 후 복구되지 않을 수 있습니다.</li>
+<li><strong>PC 데이터:</strong> PC 설정과 로컬 로그는 PC에 남을 수 있습니다. PC 앱 제거만으로 모든 사용자 설정 파일이 자동 삭제되는 것은 아닙니다. 삭제 위치와 방법은 문의 주소로 요청할 수 있습니다.</li>
+<li><strong>Google 처리 정보:</strong> 기기 광고 설정, Google 계정과 개인정보 관리 도구 또는 앱에 제공되는 광고 개인정보 선택 기능을 이용할 수 있습니다. 앱 삭제가 Google이 이미 처리한 모든 정보를 자동 삭제하지는 않습니다.</li>
+</ul>
+<p>이용자는 적용되는 법령에 따라 개발자가 보유한 개인정보의 열람, 정정, 삭제 또는 처리 제한 등을 문의 주소로 요청할 수 있습니다. 앱의 로컬 데이터는 개발자가 원격으로 열람·삭제할 수 없으며 기기에서 직접 관리해야 합니다. 문의 처리에 필요한 최소한의 본인 확인을 요청할 수 있습니다. 현재 별도 계정이 없으므로 계정 탈퇴 기능은 제공하지 않습니다.</p>
+
+<h2>8. 아동 및 방침 변경</h2>
+<p>MirrorCat은 아동을 주요 대상으로 설계한 서비스가 아닙니다. 개발자는 아동의 개인정보를 고의로 수집하려는 목적을 갖고 있지 않습니다. 아동의 정보가 부적절하게 처리되었다고 판단되는 경우 보호자는 문의 주소로 연락할 수 있습니다. 적용되는 법령에 따라 필요한 조치를 합니다.</p>
+<p>기능, 데이터 처리, SDK 또는 법령이 변경되면 이 방침과 수정일을 갱신합니다. 중요한 변경은 필요한 경우 앱·스토어 등으로 안내하고 법령이 요구하는 동의를 받습니다. 한국어와 영어는 동일한 처리 관행을 설명하며 이용자의 거주지에 적용되는 강행적 개인정보 보호 권리는 제한하지 않습니다.</p>
+</section>
+
+<hr>
+<section id="en" lang="en">
+<h1>MirrorCat Privacy Policy</h1>
+<p class="meta">Effective / last updated: October 4, 2026<br>Android package: <strong>com.tabletcontrol</strong> · Applies to the MirrorCat Android app and connected MirrorCat desktop apps.</p>
+<h2>1. Operator and scope</h2>
+<p>Lee Seokhee (이석희, the developer) provides MirrorCat to stream an Android device’s screen and playback audio to a connected PC and control the device with the PC’s keyboard and mouse. This policy explains information accessed, transmitted and stored for these features.</p>
+<p>MirrorCat currently has no account registration or developer-operated cloud account service. Screen sharing and input control are processed between connected devices. This does not mean that third-party SDKs or information you voluntarily send for support are never collected.</p>
+
+<h2>2. Information and purposes</h2>
+<p><strong>Screen and playback audio:</strong> During sharing, video and permitted game/media playback audio are transmitted to the connected PC. Screens may contain personal information, other apps, notifications and messages. Normal sharing does not automatically record them to files or upload them to a developer server. Wi-Fi audio uses Android playback capture. RECORD_AUDIO permission is used for this feature; the current implementation does not use microphone recording to collect your voice or surrounding sounds. USB uses ADB/scrcpy. Audio availability depends on Android and other apps’ restrictions.</p>
+<p><strong>Input and mappings:</strong> Keyboard/mouse events, touch positions and press/release state are sent to Android for control. Mapping names, assigned keys/buttons, coordinates, sensitivity, selected profiles and game matching settings support control and automatic switching. Mappings are stored privately on Android; the desktop uses necessary mappings in memory while connected, without a persistent mapping cache.</p>
+<p><strong>App information:</strong> App names/packages visible under Android’s package visibility rules and foreground app package information may be processed and sent to the connected PC for mapping selection, editing and switching. The accessibility service does not retrieve window text, passwords or message contents. App lists and foreground package information are not supplied to advertising providers for ad personalization.</p>
+<p><strong>Connection and access status:</strong> Device model/display name, PC name, local IP/port, USB device identifiers, app-generated installation/discovery identifiers, approval and certificate information support discovery, authentication and reconnecting. Some discovery metadata may be visible to other devices on the same network. Android stores an app-generated installation ID, first-run time, trial period and session usage state to enforce access limits and shares necessary status with the PC. Desktop settings and connection trust information may be stored locally.</p>
+
+<h2>3. Permissions and choices</h2>
+<ul>
+<li>Wi-Fi screen capture starts after Android approval. USB requires USB debugging and approval of the PC.</li>
+<li>The accessibility service, when you enable it, performs touch gestures from connected-PC input and observes window-change package information for automatic mappings. It does not retrieve window contents. You can disable it in Android accessibility settings.</li>
+<li>Audio permission supports playback-audio sharing. Denying it may disable audio sharing.</li>
+<li>Notifications and foreground services show and maintain an active sharing session. Network access supports local connections and Google SDK services.</li>
+</ul>
+<p>Denying a permission can limit the corresponding feature. Stop sharing, disable PC control or disconnect to stop the relevant transmission. Accessibility permission can be managed separately in Android settings.</p>
+
+<h2>4. Diagnostics and support</h2>
+<p>Local technical diagnostics may include connection/disconnection times, error categories, state, latency/traffic and input-processing success/failure. Android may retain its latest Wi-Fi disconnect summary; desktop connection logs rotate with a size limit. Normal connection logs do not store mapping documents, screen/audio recordings or raw key events.</p>
+<p>Detailed input tracing is off by default. When explicitly enabled, limited timing, input events/coordinates and processing state may be held in memory and read by the connected PC. Default tracing is limited to 60 seconds, 4,096 records and 2 MiB, and is cleared on stop, expiry or shutdown. Copies separately exported or supplied during support are not automatically deleted when memory traces are cleared.</p>
+<p>If you email the developer, your email address, message and attachments are used to respond and investigate. Do not send passwords, payment details, other people’s messages or unnecessary screen content. Support materials supplied to the developer are deleted when their support purpose is fulfilled, except where legal retention obligations apply. The app does not automatically upload diagnostic materials to the developer.</p>
+
+<h2>5. Google advertising, consent and product services</h2>
+<p>The Android app includes Google Mobile Ads (AdMob), User Messaging Platform (UMP) and Google Play Billing SDKs. The currently prepared beta uses test ad IDs; actual purchasing and purchase restoration are not connected. Google may process information during SDK network communication, including test advertising.</p>
+<p>Depending on SDK versions, settings and your choices, Google advertising/consent services may process IP addresses and approximate location, advertising or other identifiers, device/app information, app/ad interactions, diagnostics and consent records. Versions with production ads provide applicable regional consent and privacy options. Google may process information in the United States and other countries; its policies describe handling, retention and rights.</p>
+<p>If product lookup is configured, Google Play can provide localized product/pricing information. The current app does not directly receive card numbers or bank account details. This policy and required disclosures will be updated if actual purchases or server-based entitlement checks change data processing.</p>
+<ul><li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li><li><a href="https://policies.google.com/technologies/ads">Google advertising information</a></li><li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a></li></ul>
+
+<h2>6. Transfers and safeguards</h2>
+<p>Screen, playback audio, input and mapping information are transferred to the devices you approve to perform your requested features. The developer does not sell this information for advertising or send it to a developer cloud. Google SDK transmissions and materials you submit for support are described separately above.</p>
+<p>Direct Wi-Fi uses TLS and device approval. USB uses the Android-approved ADB connection. Mappings use Android-private storage and encryption and are excluded from automatic cloud backup/device transfer. Manage approved PCs and debugging permissions and avoid untrusted devices. Security measures cannot remove every risk.</p>
+
+<h2>7. Retention, deletion and rights</h2>
+<ul>
+<li>Screen/audio and ordinary input are processed temporarily for sharing without automatic recording or permanent storage.</li>
+<li>Mappings, settings, trial and trust information remain locally as needed for the features. Delete mappings in the app, or clear Android app data/uninstall to remove local app data. Mappings are not automatically backed up and may be unrecoverable after deletion.</li>
+<li>Desktop settings and logs may remain on the PC after uninstalling. Contact the developer for their locations and deletion instructions.</li>
+<li>Manage Google-processed information through device advertising settings, Google account/privacy tools or available in-app ad privacy options. Uninstalling does not automatically delete all information previously processed by Google.</li>
+</ul>
+<p>You may contact the developer to request access, correction, deletion or restriction of developer-held personal information under applicable laws. The developer cannot remotely access or delete your local app data; manage it on your devices. Minimal identity verification may be requested for support requests. There are currently no user accounts to close.</p>
+
+<h2>8. Children and changes</h2>
+<p>MirrorCat is not primarily designed for children. The developer does not intentionally seek to collect children’s personal information. A guardian who believes a child’s information was handled improperly may contact the developer for appropriate action under applicable law.</p>
+<p>We update this policy and its date when features, processing, SDKs or laws change. Material changes will be communicated through the app/store where appropriate, and legally required consent obtained. Korean and English describe the same practices and do not limit mandatory privacy rights in your jurisdiction.</p>
+</section>
+
+<hr><section id="contact" class="contact"><h2>개인정보 문의 / Privacy contact</h2>
+<p>개발자·개인정보 문의 담당 / Developer and privacy contact: <strong>이석희 · Lee Seokhee</strong><br>
+이메일 / Email: <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p></section>
+<p class="meta">이 페이지는 외부 글꼴·분석 스크립트·쿠키를 사용하지 않습니다. GitHub Pages 호스팅 서비스는 자체 정책에 따라 방문자의 연결 정보를 처리할 수 있습니다. / This page uses no external fonts, analytics scripts or cookies. GitHub Pages may process visitor connection information under its own <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>.</p>
+</main></body></html>
