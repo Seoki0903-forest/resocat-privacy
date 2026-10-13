@@ -117,7 +117,7 @@
 <!-- ==================== 1. 한국어 (KO) ==================== -->
 <article id="lang-ko" class="policy-content active">
   <div class="card">
-    <strong>시행일:</strong> 2026년 3월 23일<br>
+    <strong>시행일:</strong> 2026년 10월 13일<br>
     <strong>개발자:</strong> 이석희 (svbreqwaiu01@gmail.com)<br>
     <strong>앱 이름:</strong> RoteCat (패키지명: app.rotecat)
   </div>
@@ -132,7 +132,7 @@
     <li><strong>광고 관련 정보:</strong> 무료 버전에서 광고가 제공되는 경우, Google Mobile Ads SDK가 광고 식별자(AD_ID), 대략적인 위치, 기기 식별자 및 진단 정보를 처리할 수 있습니다.</li>
     <li><strong>구매 관련 정보:</strong> 광고 제거 상품(개발자 후원)을 구매하면 Google Play가 결제를 처리하며, 앱은 구매 확인 및 복원을 위해 상품 ID와 구매 상태 정보만 처리합니다. 개발자는 결제 카드 정보나 금융 정보를 일체 수집하거나 저장하지 않습니다.</li>
   </ul>
-  <p><em>※ 본 앱은 접근성 서비스를 통해 사용자가 입력한 문자(비밀번호, 메시지, 검색어), 영상 콘텐츠, 웹 서핑 기록을 수집할 목적으로 설계되지 않았으며, 어떠한 개인 데이터도 개발자 서버로 전송하거나 외부에 보관하지 않습니다.</em></p>
+  <p><em>앱은 접근성 서비스를 통해 입력한 비밀번호·메시지·검색어, 화면·영상 콘텐츠 또는 웹 탐색 기록을 수집하거나 전송하지 않습니다. 아래에 설명한 진단 기록은 사용자가 명시적으로 동의한 경우에만 전송합니다.</em></p>
 
   <h2>2. 정보의 이용 목적</h2>
   <ul>
@@ -147,7 +147,7 @@
   <ul>
     <li><strong>접근성 서비스 (AccessibilityService):</strong> YouTube 및 브라우저에서 동영상이 전체화면으로 실행되었는지 여부를 기기 내부에서 실시간으로 감지하기 위해서만 사용됩니다. 이 서비스는 장애 지원 도구가 아니며 화면 회전 자동화 기능에만 엄격하게 한정 사용됩니다.</li>
     <li><strong>시스템 설정 수정 권한 (WRITE_SETTINGS):</strong> 화면 자동 회전 잠금/해제 및 화면 방향을 변경하고, 원래 설정으로 복원하기 위해 사용됩니다.</li>
-    <li><strong>네트워크 권한 (INTERNET, ACCESS_NETWORK_STATE):</strong> Google AdMob 광고 로드 및 Google Play 결제 검증에 사용됩니다.</li>
+    <li><strong>네트워크 권한 (INTERNET, ACCESS_NETWORK_STATE):</strong> Google AdMob 광고 로드, Google Play 결제 검증 및 사용자가 동의한 오류 진단 로그의 HTTPS 전송에 사용됩니다.</li>
     <li><strong>광고 ID 권한 (AD_ID):</strong> 맞춤형 광고 및 분석을 위해 Google Play 정책에 따라 선언됩니다.</li>
   </ul>
 
@@ -157,12 +157,20 @@
     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
     <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google의 광고 데이터 이용 안내</a></li>
   </ul>
-  <p>개발자는 어떠한 경우에도 이용자의 개인정보를 판매하거나 제3자에게 임의로 제공하지 않습니다. 접근성 서비스를 통해 확인된 실시간 화면 정보는 광고 맞춤설정에 절대 사용되지 않으며 외부로 유출되지 않습니다.</p>
+  <p>개발자는 개인정보를 판매하거나 임의의 제3자에게 제공하지 않습니다. 동의한 진단 보고서는 아래에 설명한 Cloudflare 호스팅 서비스에서 개발자를 위해 처리됩니다. 접근성 서비스가 확인하는 화면 레이아웃·내용은 광고 맞춤설정에 사용하거나 외부에 전송하지 않습니다.</p>
 
   <h2>5. 정보의 보유 및 삭제</h2>
-  <p>모든 설정값과 회전 복구 정보는 이용자의 기기 내부 메모리에만 보관됩니다. 이용자가 앱 데이터 삭제 또는 앱 삭제(제거)를 진행하면 모든 데이터는 즉시 완전하게 영구 삭제됩니다. 별도의 계정 등록 시스템이 없으므로 개발자 측에 보관되는 이용자 계정 정보는 존재하지 않습니다.</p>
+  <p>설정값과 회전 복구 정보, 기기 내 진단 로그는 기기에 보관되며 앱 데이터 삭제 또는 앱 제거 시 기기에서 삭제됩니다. 별도의 사용자 계정은 없습니다. 이미 전송된 진단 로그는 앱을 제거해도 서버에서 즉시 삭제되지 않으며 아래의 별도 보관 정책을 따릅니다.</p>
 
-  <h2>6. 개인정보 보호 책임 및 문의</h2>
+  <h2>6. 선택적 오류 진단 로그 전송</h2>
+  <p>사용자가 오류 로그 보내기를 누른 뒤 “오류 로그를 개발자에게 보내시겠습니까?”에 동의한 경우에만 https://seokiapps.com/api/diagnostics/submit 으로 HTTPS 전송합니다. 앱 실행이나 오류 발생만으로 자동 전송하지 않습니다. 목적은 오류 조사와 안정성 개선입니다.</p>
+  <p>전송 대상은 앱 버전, 기기 모델, Android 버전, 회전 및 앱 판정 기록, 오류 메시지·스택 트레이스 등 필요한 진단 정보와 접수 구분용 임의 보고서 ID입니다. 고유 기기 식별번호·광고 ID, 이메일, 비밀번호, 인증 토큰, 화면 이미지·내용, 입력 문자, 영상 콘텐츠 및 웹 탐색 기록은 전송 대상에서 제외하거나 가립니다. 서버도 흔한 민감정보 표현을 추가로 가리지만 모든 개인정보 제거를 보장하지는 않습니다.</p>
+  <p>로그는 관리자 로그인 후 개발자만 조회하며 공개 피드백 목록, 광고 또는 이용자 프로파일링에 사용하지 않습니다. 서버의 진단 로그는 최근 30일만 조회되고 만료 기록은 새 접수 또는 관리자 목록 조회 시 삭제됩니다. 최대 1,000건을 보관하며 한도 초과 시 기존 로그를 덮어쓰지 않고 접수를 거절합니다. 전송 실패 시 기기 로그를 유지하고 사용자 재시도를 허용합니다.</p>
+  <p>서버는 IP 기반 전송 횟수 제한으로 스팸을 방지합니다. 진단 로그 DB에는 IP 원문을 저장하지 않고 서버 비밀값과 시간 구간을 이용한 해시 제한 키를 별도로 처리합니다. 홈페이지의 호스팅·저장은 Cloudflare를 이용하며 Cloudflare는 서비스 제공과 보안을 위해 IP 등 요청 정보를 처리할 수 있습니다.</p>
+  <p>서버 로그 삭제를 요청하려면 아래 문의 이메일에 보고서 ID를 알려주세요. 문의 메일에 진단 로그나 비밀번호를 다시 첨부할 필요는 없습니다.</p>
+  <p><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></p>
+
+  <h2>7. 개인정보 보호 책임 및 문의</h2>
   <p>본 방침이나 개인정보 처리에 관한 문의 사항은 아래 이메일로 연락해 주시면 신속하게 답변해 드리겠습니다.</p>
   <p><strong>문의 이메일:</strong> <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p>
 </article>
@@ -170,7 +178,7 @@
 <!-- ==================== 2. English (EN) ==================== -->
 <article id="lang-en" class="policy-content">
   <div class="card">
-    <strong>Effective Date:</strong> March 23, 2026<br>
+    <strong>Effective Date:</strong> October 13, 2026<br>
     <strong>Developer:</strong> Lee Seokhee (svbreqwaiu01@gmail.com)<br>
     <strong>Application:</strong> RoteCat (Package: app.rotecat)
   </div>
@@ -185,7 +193,7 @@
     <li><strong>Advertising Information:</strong> When ads are served in the free version, the Google Mobile Ads SDK may process advertising identifiers (AD_ID), approximate location, device identifiers, and diagnostics under Google's policies.</li>
     <li><strong>In-App Purchases:</strong> Google Play handles payments for ad-removal donations. The App only accesses product ID and purchase token to remove ads. The Developer never collects or stores credit card or financial data.</li>
   </ul>
-  <p><em>* The App is never designed to collect user-entered text (passwords, messages, search queries), video content, or web browsing history, and does not store or transmit such information to any remote server.</em></p>
+  <p><em>The App does not collect or transmit passwords, messages, search terms, screen or video content, or web browsing history through the Accessibility Service. The diagnostic records described below are sent only with explicit user consent.</em></p>
 
   <h2>2. Purpose of Information Processing</h2>
   <ul>
@@ -200,7 +208,7 @@
   <ul>
     <li><strong>Accessibility Service (AccessibilityService):</strong> Used exclusively to detect YouTube full-screen video state locally on device. It is not an accessibility aid and is strictly limited to screen rotation automation.</li>
     <li><strong>Modify System Settings (WRITE_SETTINGS):</strong> Required to toggle system auto-rotation and adjust user rotation, then restore previous settings.</li>
-    <li><strong>Network Access (INTERNET, ACCESS_NETWORK_STATE):</strong> Required for AdMob ad delivery and Google Play in-app billing verification.</li>
+    <li><strong>Network Access (INTERNET, ACCESS_NETWORK_STATE):</strong> Used for AdMob ads, Google Play billing verification, and HTTPS submission of diagnostic logs with user consent.</li>
     <li><strong>Advertising ID (AD_ID):</strong> Declared in compliance with Google Play policy for ad serving and analytics.</li>
   </ul>
 
@@ -210,19 +218,27 @@
     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
     <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses information from sites or apps</a></li>
   </ul>
-  <p>The Developer does not sell or share personal information. Screen layout data inspected by the Accessibility Service is never used for advertising personalization or shared externally.</p>
+  <p>The Developer does not sell personal information or disclose it to unrelated third parties. Consented diagnostic reports are processed for the Developer using the Cloudflare hosting service described below. Screen layout and content inspected by the Accessibility Service are not used for advertising personalization or transmitted externally.</p>
 
   <h2>5. Retention and Deletion</h2>
-  <p>All user preferences and rotation state values remain solely on the user's device and are completely deleted when the App's storage is cleared or uninstalled. No user accounts are used, so no account data exists on developer servers.</p>
+  <p>Preferences, rotation restoration values, and local diagnostic logs remain on the device and are removed from the device when App data is cleared or the App is uninstalled. There are no user accounts. Previously submitted logs are not immediately deleted from the server by uninstalling the App; the separate policy below applies.</p>
 
-  <h2>6. Contact</h2>
+  <h2>6. Optional diagnostic log submission</h2>
+  <p>Logs are sent over HTTPS to https://seokiapps.com/api/diagnostics/submit only after the user selects Send error logs and confirms “Send error logs to the developer?”. App startup or an error alone does not trigger submission. The purpose is investigating errors and improving stability.</p>
+  <p>Submitted information includes the App version, device model, Android version, rotation and app-detection records, error messages and stack traces needed for diagnosis, and a random report ID for receipt identification. Unique device or advertising IDs, email addresses, passwords, authentication tokens, screen images or content, entered text, video content, and browsing history are excluded or redacted. The server additionally masks common sensitive expressions, but cannot guarantee removal of all personal information.</p>
+  <p>Only the developer can view logs after administrator login. Logs are not included in public feedback lists or used for advertising or user profiling. Server diagnostic logs are viewable for the most recent 30 days; expired records are deleted on a new submission or administrator list request. A maximum of 1,000 reports is retained; at capacity, new reports are rejected rather than overwriting existing ones. Failed submissions preserve local logs and allow the user to retry.</p>
+  <p>The server uses IP-based submission limits to prevent spam. Raw IP addresses are not stored in the diagnostic report database; separate rate-limit keys are hashed using a server secret and time window. Cloudflare provides hosting and storage and may process request information, including IP addresses, to provide and secure its services.</p>
+  <p>To request deletion of a server report, contact the email below with its report ID. You do not need to reattach logs or passwords to the email.</p>
+  <p><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></p>
+
+  <h2>7. Contact</h2>
   <p>For inquiries regarding this Privacy Policy, please contact: <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p>
 </article>
 
 <!-- ==================== 3. 日本語 (JA) ==================== -->
 <article id="lang-ja" class="policy-content">
   <div class="card">
-    <strong>施行日:</strong> 2026年3月23日<br>
+    <strong>施行日:</strong> 2026年10月13日<br>
     <strong>開発者:</strong> Lee Seokhee (svbreqwaiu01@gmail.com)<br>
     <strong>アプリ名:</strong> RoteCat (パッケージ名: app.rotecat)
   </div>
@@ -237,7 +253,7 @@
     <li><strong>広告関連情報:</strong> 無料版で広告が表示される場合、Google Mobile Ads SDKが広告ID（AD_ID）、大まかな位置情報、端末識別子および診断情報を処理することがあります。</li>
     <li><strong>購入関連情報:</strong> 広告非表示（開発者支援）アイテムの購入時、Google Playが決済を処理し、アプリは購入確認と復元のためにアイテムIDと購入状態情報のみを処理します。開発者はクレジットカード番号や金融情報を一切収集または保持しません。</li>
   </ul>
-  <p><em>※ 本アプリは、ユーザー補助サービスを通じて入力された文字（パスワード、メッセージ、検索語）、動画コンテンツ、閲覧履歴を収集するように設計されておらず、いかなる個人データも開発者サーバーに送信または外部に保存することはありません。</em></p>
+  <p><em>本アプリはユーザー補助サービスを通じて入力されたパスワード・メッセージ・検索語、画面・動画内容、閲覧履歴を収集または送信しません。以下の診断記録は利用者の明示的な同意がある場合に限り送信します。</em></p>
 
   <h2>2. 情報の利用目的</h2>
   <ul>
@@ -252,7 +268,7 @@
   <ul>
     <li><strong>ユーザー補助サービス (AccessibilityService):</strong> YouTubeおよびブラウザで動画が全画面表示されたかどうかを端末内部でリアルタイムに検出するためにのみ使用されます。障害支援ツールではなく、画面回転の自動化機能に厳格に限定して使用されます。</li>
     <li><strong>システム設定の変更権限 (WRITE_SETTINGS):</strong> 画面の自動回転の固定/解除、画面の向きの変更、および元の設定への復元のために使用されます。</li>
-    <li><strong>ネットワーク権限 (INTERNET, ACCESS_NETWORK_STATE):</strong> Google AdMob広告の読み込みおよびGoogle Play課金の検証に使用されます。</li>
+    <li><strong>ネットワーク権限 (INTERNET, ACCESS_NETWORK_STATE):</strong> AdMob広告、Google Play課金の確認、および利用者が同意した診断ログのHTTPS送信に使用します。</li>
     <li><strong>広告ID権限 (AD_ID):</strong> 広告配信および分析のため、Google Playポリシーに準拠して宣言されています。</li>
   </ul>
 
@@ -262,12 +278,20 @@
     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
     <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google による広告データの利用について</a></li>
   </ul>
-  <p>開発者は、いかなる場合も利用者の個人情報を販売したり、第三者に無断で提供したりすることはありません。ユーザー補助サービスを通じて確認されたリアルタイムの画面情報は、広告のパーソナライズに使用されることはなく、外部に漏洩することもありません。</p>
+  <p>開発者は個人情報を販売したり、無関係の第三者に提供したりしません。同意された診断報告は、以下のCloudflareホスティングサービスで開発者のために処理されます。ユーザー補助サービスが確認する画面レイアウト・内容を広告の個人化に使用したり外部送信したりしません。</p>
 
   <h2>5. 情報の保持および削除</h2>
-  <p>すべての設定値と回転復元情報は、利用者の端末内部メモリにのみ保持されます。利用者がアプリデータの消去またはアプリのアンインストールを実行すると、すべてのデータは直ちに完全かつ永久に削除されます。別途のアカウント登録システムは存在しないため、開発者側に保存されるユーザーアカウント情報は存在しません。</p>
+  <p>設定、回転復元値、端末内の診断ログは端末に保存され、アプリデータの消去またはアンインストールで端末から削除されます。利用者アカウントはありません。送信済みログはアンインストールによってサーバーから直ちに削除されず、以下の別の保管方針に従います。</p>
 
-  <h2>6. 個人情報保護責任およびお問い合わせ</h2>
+  <h2>6. 任意のエラー診断ログ送信</h2>
+  <p>「エラーログを送信」を選び、「エラーログを開発者に送信しますか？」に同意した場合のみ、https://seokiapps.com/api/diagnostics/submit にHTTPSで送信します。起動やエラー発生だけで自動送信しません。目的はエラー調査と安定性向上です。</p>
+  <p>送信対象はアプリのバージョン、機種、Androidバージョン、回転・アプリ判定記録、診断に必要なエラーメッセージ・スタックトレース、および受付識別用のランダムな報告IDです。端末固有番号・広告ID、メールアドレス、パスワード、認証トークン、画面画像・内容、入力文字、動画内容、閲覧履歴は除外またはマスクします。サーバーも一般的な機密表現をマスクしますが、すべての個人情報の除去は保証できません。</p>
+  <p>ログは管理者ログイン後に開発者のみが閲覧し、公開フィードバック、広告、利用者プロファイリングに使用しません。サーバー上の診断ログは直近30日間のみ閲覧でき、期限切れ記録は新規受付または管理者一覧の取得時に削除します。最大1,000件を保管し、上限時は既存ログを上書きせず新規受付を拒否します。送信失敗時は端末ログを残し、利用者が再試行できます。</p>
+  <p>サーバーはIPに基づく送信回数制限でスパムを防止します。診断ログDBにIPの原文を保存せず、サーバーの秘密値と時間区間から生成したハッシュ制限キーを別途処理します。ホスティングと保存にはCloudflareを利用し、同社はサービス提供と保護のためIPなどのリクエスト情報を処理する場合があります。</p>
+  <p>サーバー報告の削除依頼は、下記メールに報告IDをお知らせください。ログやパスワードを再添付する必要はありません。</p>
+  <p><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></p>
+
+  <h2>7. 個人情報保護責任およびお問い合わせ</h2>
   <p>本方針や個人情報の取り扱いに関するご質問は、下記のメールアドレスまでお気軽にお問い合わせください。</p>
   <p><strong>お問い合わせメール:</strong> <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p>
 </article>
@@ -275,7 +299,7 @@
 <!-- ==================== 4. 简体中文 (ZH) ==================== -->
 <article id="lang-zh" class="policy-content">
   <div class="card">
-    <strong>生效日期:</strong> 2026年3月23日<br>
+    <strong>生效日期:</strong> 2026年10月13日<br>
     <strong>开发者:</strong> Lee Seokhee (svbreqwaiu01@gmail.com)<br>
     <strong>应用名称:</strong> RoteCat (包名: app.rotecat)
   </div>
@@ -290,7 +314,7 @@
     <li><strong>广告相关信息:</strong> 在免费版展示广告时，Google Mobile Ads SDK 可能会根据 Google 政策处理广告标识符（AD_ID）、粗略位置、设备标识符及诊断信息。</li>
     <li><strong>应用内购买信息:</strong> 购买去广告（支持开发者）项目时由 Google Play 处理支付，应用仅访问商品 ID 和购买状态凭证以验证并移除广告。开发者绝不收集或存储任何银行卡及金融支付信息。</li>
   </ul>
-  <p><em>※ 本应用绝不通过无障碍服务收集用户输入的文本内容（密码、聊天记录、搜索词）、视频画面内容或网页浏览历史，亦不将任何个人隐私数据上传至开发者服务器或向外部传输。</em></p>
+  <p><em>应用不会通过无障碍服务收集或传输输入的密码、消息、搜索词、屏幕或视频内容及浏览历史。下述诊断记录仅在用户明确同意后发送。</em></p>
 
   <h2>2. 信息的使用目的</h2>
   <ul>
@@ -305,7 +329,7 @@
   <ul>
     <li><strong>无障碍服务 (AccessibilityService):</strong> 严格仅用于在设备本地实时检测 YouTube 及浏览器全屏视频播放状态。本功能非残障辅助工具，仅严格限定用于屏幕旋转自动化。</li>
     <li><strong>修改系统设置权限 (WRITE_SETTINGS):</strong> 用于锁定/解锁屏幕自动旋转、调整屏幕方向并在操作完成后安全恢复原状。</li>
-    <li><strong>网络权限 (INTERNET, ACCESS_NETWORK_STATE):</strong> 用于加载 Google AdMob 广告及验证 Google Play 内购支付。</li>
+    <li><strong>网络权限 (INTERNET, ACCESS_NETWORK_STATE):</strong> 用于AdMob广告、Google Play付款验证及用户同意后的诊断日志HTTPS传输。</li>
     <li><strong>广告 ID 权限 (AD_ID):</strong> 遵循 Google Play 政策声明，用于广告展示与数据统计。</li>
   </ul>
 
@@ -315,12 +339,20 @@
     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私权政策</a></li>
     <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 如何利用来自采用其服务的网站或应用的信息</a></li>
   </ul>
-  <p>开发者在任何情况下均不会出售或擅自向第三方提供用户个人信息。通过无障碍服务获取的屏幕布局信息绝不会用于广告个性化推荐，亦绝不会外泄。</p>
+  <p>开发者不会出售个人信息或将其提供给无关第三方。经同意的诊断报告由下述Cloudflare托管服务为开发者处理。无障碍服务检查的屏幕布局和内容不会用于个性化广告或对外传输。</p>
 
   <h2>5. 数据存储与销毁</h2>
-  <p>所有偏好设置与旋转恢复数据均仅存储在用户设备本地内存中。用户清除应用数据或卸载应用时，所有数据将立即彻底永久销毁。应用无需注册账户，因此开发者服务器上不存在任何用户账户数据。</p>
+  <p>设置、旋转恢复值和本地诊断日志保存在设备上，清除应用数据或卸载应用时从设备删除。应用不设用户账户。卸载不会立即删除已提交到服务器的日志；这些日志适用下述单独的保留规则。</p>
 
-  <h2>6. 隐私保护责任与联系方式</h2>
+  <h2>6. 自愿发送错误诊断日志</h2>
+  <p>只有用户选择发送错误日志并确认“将错误日志发送给开发者吗？”后，才通过HTTPS向 https://seokiapps.com/api/diagnostics/submit 发送。启动应用或发生错误本身不会触发自动发送。用途是调查错误和提高稳定性。</p>
+  <p>发送内容包括应用版本、设备型号、Android版本、旋转及应用判断记录、诊断所需的错误消息与堆栈，以及用于区分报告的随机报告ID。设备唯一编号、广告ID、邮箱、密码、认证令牌、屏幕图像或内容、输入文本、视频内容和浏览历史会被排除或遮蔽。服务器也会遮蔽常见敏感表达，但无法保证移除所有个人信息。</p>
+  <p>仅开发者在管理员登录后查看日志，不会将其用于公开反馈列表、广告或用户画像。服务器诊断日志仅可查看最近30天的记录；过期记录在新报告提交或管理员获取列表时删除。最多保留1,000份报告，达到上限后拒绝新报告而不覆盖旧报告。发送失败时保留设备日志，用户可以重试。</p>
+  <p>服务器通过基于IP的发送次数限制防止垃圾提交。诊断日志数据库不保存原始IP；另行处理使用服务器秘密值和时间段生成的哈希限流键。托管和存储由Cloudflare提供，Cloudflare可能为提供和保护服务而处理IP等请求信息。</p>
+  <p>如需删除服务器报告，请向下方邮箱提供报告ID。无需再次附上日志或密码。</p>
+  <p><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></p>
+
+  <h2>7. 隐私保护责任与联系方式</h2>
   <p>如对本隐私政策或个人信息处理有任何疑问，请通过以下邮箱与我们联系，我们将尽快予以回复。</p>
   <p><strong>联系邮箱:</strong> <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p>
 </article>
@@ -328,7 +360,7 @@
 <!-- ==================== 5. Español (ES) ==================== -->
 <article id="lang-es" class="policy-content">
   <div class="card">
-    <strong>Fecha de vigencia:</strong> 23 de marzo de 2026<br>
+    <strong>Fecha de vigencia:</strong> 13 de octubre de 2026<br>
     <strong>Desarrollador:</strong> Lee Seokhee (svbreqwaiu01@gmail.com)<br>
     <strong>Aplicación:</strong> RoteCat (Nombre de paquete: app.rotecat)
   </div>
@@ -343,7 +375,7 @@
     <li><strong>Información de publicidad:</strong> Si se muestran anuncios en la versión gratuita, el SDK de Google Mobile Ads puede procesar identificadores de publicidad (AD_ID), ubicación aproximada, identificadores del dispositivo y datos de diagnóstico según las políticas de Google.</li>
     <li><strong>Información de compras dentro de la app:</strong> Google Play gestiona los pagos de las donaciones para eliminar anuncios. La Aplicación solo consulta el ID del producto y el token de compra para desbloquear la función sin anuncios. El Desarrollador nunca recopila ni almacena números de tarjeta ni datos financieros.</li>
   </ul>
-  <p><em>※ Esta Aplicación nunca está diseñada para recopilar texto ingresado por el usuario (contraseñas, mensajes, búsquedas), contenido multimedia o historial de navegación web mediante el servicio de accesibilidad, ni almacena ni transmite ningún dato personal a servidores remotos.</em></p>
+  <p><em>La aplicación no recopila ni transmite contraseñas, mensajes, búsquedas, contenido de pantalla o vídeo ni historial de navegación mediante el servicio de accesibilidad. Los registros descritos abajo se envían solo con consentimiento explícito.</em></p>
 
   <h2>2. Finalidades del tratamiento de la información</h2>
   <ul>
@@ -358,7 +390,7 @@
   <ul>
     <li><strong>Servicio de Accesibilidad (AccessibilityService):</strong> Se utiliza exclusivamente para detectar localmente y en tiempo real si un vídeo se está reproduciendo a pantalla completa en YouTube o navegadores. No es una herramienta de asistencia para discapacidades y su uso está estrictamente limitado a la automatización de la rotación de pantalla.</li>
     <li><strong>Modificar ajustes del sistema (WRITE_SETTINGS):</strong> Necesario para alternar el bloqueo/desbloqueo de rotación automática, cambiar la orientación de la pantalla y restaurar los ajustes previos.</li>
-    <li><strong>Permisos de red (INTERNET, ACCESS_NETWORK_STATE):</strong> Necesarios para cargar anuncios de Google AdMob y verificar compras en Google Play.</li>
+    <li><strong>Permisos de red (INTERNET, ACCESS_NETWORK_STATE):</strong> Se usan para anuncios de AdMob, verificación de pagos de Google Play y envío HTTPS de registros de diagnóstico con consentimiento.</li>
     <li><strong>Identificador de publicidad (AD_ID):</strong> Declarado de conformidad con las políticas de Google Play para publicidad y estadísticas.</li>
   </ul>
 
@@ -368,12 +400,20 @@
     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google</a></li>
     <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Cómo utiliza Google la información de sitios web o aplicaciones</a></li>
   </ul>
-  <p>El Desarrollador nunca vende ni transfiere información personal a terceros bajo ninguna circunstancia. La información visual analizada a través del Servicio de Accesibilidad nunca se utiliza para personalización de anuncios ni se divulga externamente.</p>
+  <p>El Desarrollador no vende datos personales ni los comunica a terceros ajenos. Los informes consentidos se procesan para el Desarrollador mediante el alojamiento Cloudflare descrito abajo. El diseño y contenido de pantalla inspeccionados por accesibilidad no se usan para personalizar anuncios ni se transmiten externamente.</p>
 
   <h2>5. Conservación y eliminación de datos</h2>
-  <p>Todas las preferencias y datos de restauración se almacenan exclusivamente en la memoria interna del dispositivo del usuario. Cuando el usuario borra los datos de la aplicación o la desinstala, todos los datos se eliminan de manera inmediata y permanente. Al no contar con sistema de cuentas de usuario, no existe ningún dato de cuenta en los servidores del Desarrollador.</p>
+  <p>Los ajustes, valores de restauración de giro y registros locales permanecen en el dispositivo y se eliminan de él al borrar los datos o desinstalar la aplicación. No hay cuentas de usuario. Desinstalar no elimina inmediatamente del servidor los registros ya enviados; se aplica la política independiente siguiente.</p>
 
-  <h2>6. Responsable de privacidad y contacto</h2>
+  <h2>6. Envío opcional de registros de diagnóstico</h2>
+  <p>Solo se envían registros por HTTPS a https://seokiapps.com/api/diagnostics/submit después de elegir enviar registros y confirmar “¿Enviar los registros de errores al desarrollador?”. El inicio de la aplicación o un error no inicia un envío automático. Se usan para investigar errores y mejorar la estabilidad.</p>
+  <p>Se envían la versión de la aplicación, modelo del dispositivo, versión de Android, registros de rotación y detección de aplicaciones, errores y trazas necesarios para el diagnóstico y un ID aleatorio del informe. Se excluyen u ocultan identificadores únicos del dispositivo o publicitarios, correos, contraseñas, tokens, imágenes o contenido de pantalla, texto introducido, vídeos e historial de navegación. El servidor también oculta expresiones sensibles habituales, sin garantizar la eliminación de toda información personal.</p>
+  <p>Solo el desarrollador puede consultar los registros tras iniciar sesión como administrador. No se publican en comentarios ni se usan para publicidad o perfiles de usuarios. Solo se consultan los últimos 30 días de registros del servidor; los vencidos se eliminan al recibir un informe o solicitar la lista administrativa. Se conservan hasta 1.000 informes; al alcanzar el límite se rechazan nuevos informes sin sobrescribir los existentes. Si falla el envío, se mantienen los registros locales y el usuario puede reintentarlo.</p>
+  <p>El servidor limita los envíos por IP para evitar spam. La base de informes no almacena IP sin procesar; trata por separado claves hash calculadas con un secreto del servidor y un intervalo temporal. Cloudflare proporciona alojamiento y almacenamiento y puede tratar información de solicitudes, incluidas IP, para prestar y proteger sus servicios.</p>
+  <p>Para solicitar la eliminación de un informe del servidor, envíe su ID al correo indicado abajo. No es necesario volver a adjuntar registros ni contraseñas.</p>
+  <p><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></p>
+
+  <h2>7. Responsable de privacidad y contacto</h2>
   <p>Si tiene alguna pregunta sobre esta Política de Privacidad o el tratamiento de datos, póngase en contacto a través del siguiente correo electrónico:</p>
   <p><strong>Correo de contacto:</strong> <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p>
 </article>
@@ -381,7 +421,7 @@
 <!-- ==================== 6. Français (FR) ==================== -->
 <article id="lang-fr" class="policy-content">
   <div class="card">
-    <strong>Date d'entrée en vigueur :</strong> 23 mars 2026<br>
+    <strong>Date d'entrée en vigueur :</strong> 13 octobre 2026<br>
     <strong>Développeur :</strong> Lee Seokhee (svbreqwaiu01@gmail.com)<br>
     <strong>Application :</strong> RoteCat (Nom du paquet : app.rotecat)
   </div>
@@ -396,7 +436,7 @@
     <li><strong>Informations publicitaires :</strong> Lorsque des publicités sont diffusées dans la version gratuite, le SDK Google Mobile Ads peut traiter l'identifiant publicitaire (AD_ID), la localisation approximative, les identifiants de l'appareil et des données de diagnostic conformément aux règles de Google.</li>
     <li><strong>Achats intégrés :</strong> Google Play gère les paiements liés aux dons de suppression des publicités. L'Application accède uniquement à l'identifiant du produit et au jeton d'achat pour valider la suppression des annonces. Le Développeur ne collecte ni ne conserve aucune coordonnée bancaire ou financière.</li>
   </ul>
-  <p><em>※ L'Application n'est absolument pas conçue pour collecter les textes saisis par l'utilisateur (mots de passe, messages, requêtes), le contenu vidéo ou l'historique de navigation via le service d'accessibilité, et ne transmet ni ne conserve aucune donnée personnelle sur des serveurs distants.</em></p>
+  <p><em>L’application ne collecte ni ne transmet les mots de passe, messages, recherches, contenus d’écran ou vidéo ni l’historique de navigation via le service d’accessibilité. Les diagnostics décrits ci-dessous sont envoyés uniquement avec un consentement explicite.</em></p>
 
   <h2>2. Finalités du traitement des informations</h2>
   <ul>
@@ -411,7 +451,7 @@
   <ul>
     <li><strong>Service d'accessibilité (AccessibilityService) :</strong> Utilisé exclusivement pour détecter localement et en temps réel l'affichage de vidéos en plein écran sur YouTube ou des navigateurs. Ce service n'est pas une aide au handicap et son usage est strictement limité à l'automatisation de la rotation d'écran.</li>
     <li><strong>Modification des paramètres système (WRITE_SETTINGS) :</strong> Nécessaire pour verrouiller/déverrouiller la rotation automatique, modifier l'orientation de l'affichage et restaurer les réglages initiaux.</li>
-    <li><strong>Autorisations réseau (INTERNET, ACCESS_NETWORK_STATE) :</strong> Nécessaires au chargement des annonces Google AdMob et à la vérification des achats intégrés Google Play.</li>
+    <li><strong>Autorisations réseau (INTERNET, ACCESS_NETWORK_STATE) :</strong> Utilisées pour AdMob, la vérification des paiements Google Play et l’envoi HTTPS de diagnostics avec le consentement de l’utilisateur.</li>
     <li><strong>Identifiant publicitaire (AD_ID) :</strong> Déclaré conformément aux règles de Google Play pour la diffusion publicitaire et les statistiques.</li>
   </ul>
 
@@ -421,12 +461,20 @@
     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Règles de confidentialité de Google</a></li>
     <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Utilisation des données par Google dans les sites ou applications</a></li>
   </ul>
-  <p>Le Développeur ne vend ni ne transmet en aucun cas les informations personnelles des utilisateurs à des tiers. Les informations de structure d'écran vérifiées par le service d'accessibilité ne sont jamais utilisées pour le ciblage publicitaire ni divulguées à l'extérieur.</p>
+  <p>Le Développeur ne vend pas de données personnelles et ne les communique pas à des tiers sans lien avec le service. Les rapports consentis sont traités pour le Développeur via l’hébergement Cloudflare décrit ci-dessous. Les structures et contenus d’écran inspectés par l’accessibilité ne servent pas à personnaliser les annonces et ne sont pas transmis à l’extérieur.</p>
 
   <h2>5. Conservation et suppression des données</h2>
-  <p>Tous les réglages et informations de restauration sont stockés uniquement dans la mémoire interne de l'appareil. Lorsque l'utilisateur efface les données de l'application ou la désinstalle, toutes les données sont immédiatement et définitivement supprimées. En l'absence de système de compte utilisateur, aucune donnée de compte n'est conservée par le Développeur.</p>
+  <p>Les réglages, valeurs de restauration de rotation et journaux locaux restent sur l’appareil et y sont supprimés lors de l’effacement des données ou de la désinstallation. Il n’existe aucun compte utilisateur. Désinstaller ne supprime pas immédiatement les rapports déjà envoyés au serveur ; la politique distincte ci-dessous s’applique.</p>
 
-  <h2>6. Responsable de la protection des données et contact</h2>
+  <h2>6. Envoi facultatif de journaux de diagnostic</h2>
+  <p>Les journaux sont envoyés par HTTPS à https://seokiapps.com/api/diagnostics/submit uniquement après avoir choisi leur envoi et confirmé « Envoyer les journaux d’erreur au développeur ? ». Le démarrage ou une erreur ne déclenche aucun envoi automatique. Ils servent à examiner les erreurs et améliorer la stabilité.</p>
+  <p>Les données envoyées comprennent la version de l’application, le modèle, la version Android, les décisions de rotation et de détection d’applications, les erreurs et traces nécessaires, ainsi qu’un identifiant aléatoire du rapport. Les identifiants uniques ou publicitaires, adresses e-mail, mots de passe, jetons, images ou contenus d’écran, textes saisis, vidéos et historique de navigation sont exclus ou masqués. Le serveur masque aussi les expressions sensibles courantes, sans garantir le retrait de toutes les données personnelles.</p>
+  <p>Seul le développeur consulte les journaux après connexion administrateur. Ils ne figurent pas dans les retours publics et ne servent ni à la publicité ni au profilage. Seuls les 30 derniers jours sont consultables ; les rapports expirés sont supprimés à la réception d’un rapport ou à la consultation de la liste administrateur. Au maximum 1 000 rapports sont conservés ; une fois la limite atteinte, les nouveaux sont refusés sans écraser les anciens. En cas d’échec, les journaux locaux sont conservés et l’utilisateur peut réessayer.</p>
+  <p>Le serveur limite les envois selon l’IP pour prévenir les abus. La base des rapports ne stocke pas l’IP brute ; des clés de limitation hachées à partir d’un secret serveur et d’une période sont traitées séparément. Cloudflare assure l’hébergement et le stockage et peut traiter les informations de requêtes, notamment les IP, pour fournir et sécuriser ses services.</p>
+  <p>Pour demander la suppression d’un rapport serveur, communiquez son identifiant à l’adresse ci-dessous. Il n’est pas nécessaire de joindre à nouveau les journaux ou mots de passe.</p>
+  <p><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></p>
+
+  <h2>7. Responsable de la protection des données et contact</h2>
   <p>Pour toute question concernant cette Politique de confidentialité ou le traitement de vos données, vous pouvez nous contacter à l'adresse e-mail suivante :</p>
   <p><strong>E-mail de contact :</strong> <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p>
 </article>
@@ -434,7 +482,7 @@
 <!-- ==================== 7. Português (PT) ==================== -->
 <article id="lang-pt" class="policy-content">
   <div class="card">
-    <strong>Data de vigência:</strong> 23 de março de 2026<br>
+    <strong>Data de vigência:</strong> 13 de outubro de 2026<br>
     <strong>Desenvolvedor:</strong> Lee Seokhee (svbreqwaiu01@gmail.com)<br>
     <strong>Aplicativo:</strong> RoteCat (Nome do pacote: app.rotecat)
   </div>
@@ -449,7 +497,7 @@
     <li><strong>Informações de publicidade:</strong> Caso sejam exibidos anúncios na versão gratuita, o SDK do Google Mobile Ads poderá processar o identificador de publicidade (AD_ID), localização aproximada, identificadores do dispositivo e dados de diagnóstico conforme as políticas do Google.</li>
     <li><strong>Informações de compras no aplicativo:</strong> O Google Play processa os pagamentos de doação para remoção de anúncios. O Aplicativo apenas consulta o ID do produto e o token de compra para remover a publicidade. O Desenvolvedor jamais coleta ou armazena números de cartão ou dados financeiros.</li>
   </ul>
-  <p><em>※ Este Aplicativo não foi desenvolvido para coletar textos digitados pelo usuário (senhas, mensagens, pesquisas), conteúdo de vídeo ou histórico de navegação na web por meio do serviço de acessibilidade, e não transmite nem armazena quaisquer dados pessoais em servidores remotos.</em></p>
+  <p><em>O aplicativo não coleta nem transmite senhas, mensagens, pesquisas, conteúdo da tela ou de vídeos nem histórico de navegação pelo serviço de acessibilidade. Os diagnósticos abaixo só são enviados com consentimento explícito.</em></p>
 
   <h2>2. Finalidades do processamento das informações</h2>
   <ul>
@@ -464,7 +512,7 @@
   <ul>
     <li><strong>Serviço de Acessibilidade (AccessibilityService):</strong> Usado unicamente para identificar no próprio aparelho a reprodução em tela cheia no YouTube ou navegadores. Não é uma ferramenta de assistência a pessoas com deficiência e seu uso é estritamente limitado à automação da rotação da tela.</li>
     <li><strong>Modificar configurações do sistema (WRITE_SETTINGS):</strong> Necessário para ativar/desativar a rotação automática, alterar a orientação da tela e restaurar as configurações originais.</li>
-    <li><strong>Permissões de rede (INTERNET, ACCESS_NETWORK_STATE):</strong> Necessárias para carregar anúncios do Google AdMob e validar compras no Google Play.</li>
+    <li><strong>Permissões de rede (INTERNET, ACCESS_NETWORK_STATE):</strong> Usadas para anúncios AdMob, verificação de pagamentos Google Play e envio HTTPS de diagnósticos com consentimento do usuário.</li>
     <li><strong>Identificador de publicidade (AD_ID):</strong> Declarado em conformidade com as diretrizes do Google Play para anúncios e análises estatísticas.</li>
   </ul>
 
@@ -474,12 +522,20 @@
     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a></li>
     <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Como o Google usa dados de sites ou apps parceiros</a></li>
   </ul>
-  <p>O Desenvolvedor jamais vende ou compartilha dados pessoais de usuários com terceiros. As informações da interface examinadas pelo Serviço de Acessibilidade nunca são empregadas para anúncios personalizados nem expostas externamente.</p>
+  <p>O Desenvolvedor não vende dados pessoais nem os divulga a terceiros sem relação com o serviço. Os relatórios consentidos são processados para o Desenvolvedor na hospedagem Cloudflare descrita abaixo. A estrutura e o conteúdo de tela inspecionados pela acessibilidade não são usados para personalizar anúncios nem transmitidos externamente.</p>
 
   <h2>5. Retenção e exclusão de dados</h2>
-  <p>Todas as preferências e dados de restauração de rotação permanecem apenas na memória interna do aparelho do usuário. Caso o usuário limpe os dados do aplicativo ou o desinstale, todos os dados serão imediata e permanentemente excluídos. Por não possuir sistema de contas, não há nenhum dado de usuário registrado nos servidores do Desenvolvedor.</p>
+  <p>Preferências, valores de restauração da rotação e registros locais ficam no dispositivo e são removidos dele ao limpar os dados ou desinstalar o aplicativo. Não há contas de usuário. Desinstalar não apaga imediatamente do servidor os registros já enviados; aplica-se a política separada abaixo.</p>
 
-  <h2>6. Encarregado de privacidade e contato</h2>
+  <h2>6. Envio opcional de registros de diagnóstico</h2>
+  <p>Os registros são enviados por HTTPS para https://seokiapps.com/api/diagnostics/submit somente após escolher o envio e confirmar “Enviar registros de erros ao desenvolvedor?”. A inicialização ou um erro não dispara envio automático. A finalidade é investigar erros e melhorar a estabilidade.</p>
+  <p>São enviados a versão do aplicativo, modelo do dispositivo, versão Android, registros de rotação e detecção de aplicativos, mensagens e rastros de erro necessários e um ID aleatório do relatório. Identificadores únicos ou publicitários, e-mails, senhas, tokens, imagens ou conteúdo da tela, texto digitado, vídeos e histórico são excluídos ou ocultados. O servidor também mascara expressões sensíveis comuns, mas não garante a remoção de todos os dados pessoais.</p>
+  <p>Só o desenvolvedor consulta os registros após login administrativo. Eles não aparecem em comentários públicos nem são usados em publicidade ou perfis de usuários. Apenas os últimos 30 dias são consultáveis; registros vencidos são apagados ao receber um relatório ou consultar a lista administrativa. São mantidos até 1.000 relatórios; no limite, novos envios são rejeitados sem sobrescrever os existentes. Falhas preservam os registros locais e permitem nova tentativa pelo usuário.</p>
+  <p>O servidor limita envios por IP para evitar spam. O banco de relatórios não armazena IP bruto; chaves hash geradas com um segredo do servidor e um intervalo de tempo são tratadas separadamente. Cloudflare fornece hospedagem e armazenamento e pode processar informações de solicitações, incluindo IP, para fornecer e proteger seus serviços.</p>
+  <p>Para pedir a exclusão de um relatório do servidor, informe seu ID ao e-mail abaixo. Não é necessário anexar novamente registros ou senhas.</p>
+  <p><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></p>
+
+  <h2>7. Encarregado de privacidade e contato</h2>
   <p>Para dúvidas sobre esta Política de Privacidade ou sobre o tratamento de informações pessoais, entre em contato pelo e-mail:</p>
   <p><strong>E-mail de contato:</strong> <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p>
 </article>
@@ -487,7 +543,7 @@
 <!-- ==================== 8. Русский (RU) ==================== -->
 <article id="lang-ru" class="policy-content">
   <div class="card">
-    <strong>Дата вступления в силу:</strong> 23 марта 2026 г.<br>
+    <strong>Дата вступления в силу:</strong> 13 октября 2026 г.<br>
     <strong>Разработчик:</strong> Lee Seokhee (svbreqwaiu01@gmail.com)<br>
     <strong>Приложение:</strong> RoteCat (Имя пакета: app.rotecat)
   </div>
@@ -502,7 +558,7 @@
     <li><strong>Рекламные данные:</strong> При показе рекламы в бесплатной версии Google Mobile Ads SDK может обрабатывать рекламный идентификатор (AD_ID), приблизительное местоположение, идентификаторы устройства и диагностические сведения в соответствии с правилами Google.</li>
     <li><strong>Данные о покупках:</strong> Google Play обрабатывает платежи за поддержку разработчика (отключение рекламы). Приложение запрашивает только идентификатор продукта и токен покупки для отключения рекламы. Разработчик никогда не собирает и не хранит данные банковских карт и платежную информацию.</li>
   </ul>
-  <p><em>※ Приложение не предназначено для сбора вводимого текста (паролей, сообщений, поисковых запросов), видеоконтента или истории браузера через службу специальных возможностей и не передает персональные данные на сторонние серверы.</em></p>
+  <p><em>Приложение не собирает и не передаёт пароли, сообщения, поисковые запросы, содержимое экрана или видео и историю браузера через службу специальных возможностей. Описанные ниже диагностические записи отправляются только с явного согласия пользователя.</em></p>
 
   <h2>2. Цели обработки информации</h2>
   <ul>
@@ -517,7 +573,7 @@
   <ul>
     <li><strong>Служба специальных возможностей (AccessibilityService):</strong> Используется исключительно для локального обнаружения полноэкранного воспроизведения видео на YouTube и в браузерах в реальном времени. Служба не является средством помощи людям с ограниченными возможностями и строго ограничена автоматизацией поворота экрана.</li>
     <li><strong>Изменение настроек системы (WRITE_SETTINGS):</strong> Требуется для переключения автоповорота, изменения ориентации дисплея и последующего восстановления исходных параметров.</li>
-    <li><strong>Сетевые разрешения (INTERNET, ACCESS_NETWORK_STATE):</strong> Необходимы для загрузки рекламы Google AdMob и проверки покупок Google Play.</li>
+    <li><strong>Сетевые разрешения (INTERNET, ACCESS_NETWORK_STATE):</strong> Используются для AdMob, проверки платежей Google Play и отправки диагностических журналов по HTTPS с согласия пользователя.</li>
     <li><strong>Рекламный идентификатор (AD_ID):</strong> Объявлен в соответствии с требованиями Google Play для показа рекламы и аналитики.</li>
   </ul>
 
@@ -527,12 +583,20 @@
     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Политика конфиденциальности Google</a></li>
     <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Как Google использует данные при использовании сайтов и приложений</a></li>
   </ul>
-  <p>Разработчик ни при каких обстоятельствах не продает и не передает личные данные третьим лицам. Структура экрана, считываемая через службу специальных возможностей, никогда не используется для персонализации рекламы и не передается вовне.</p>
+  <p>Разработчик не продаёт персональные данные и не раскрывает их посторонним третьим лицам. Отчёты с согласия пользователя обрабатываются для Разработчика на хостинге Cloudflare, описанном ниже. Структура и содержимое экрана, проверяемые службой специальных возможностей, не используются для персонализации рекламы и не передаются наружу.</p>
 
   <h2>5. Хранение и удаление данных</h2>
-  <p>Все пользовательские настройки и данные для восстановления поворота сохраняются только во внутренней памяти устройства. При очистке данных приложения или его удалении все сведения немедленно и безвозвратно удаляются. В приложении отсутствует система учетных записей, поэтому на серверах Разработчика нет данных профилей.</p>
+  <p>Настройки, значения восстановления поворота и локальные журналы хранятся на устройстве и удаляются с него при очистке данных или удалении приложения. Учётных записей нет. Удаление приложения не удаляет немедленно ранее отправленные отчёты с сервера; к ним применяется отдельная политика ниже.</p>
 
-  <h2>6. Ответственность и контактная информация</h2>
+  <h2>6. Добровольная отправка диагностических журналов</h2>
+  <p>Журналы отправляются по HTTPS на https://seokiapps.com/api/diagnostics/submit только после выбора отправки и подтверждения «Отправить журналы ошибок разработчику?». Запуск приложения или возникновение ошибки сами по себе не запускают отправку. Цель — исследование ошибок и повышение стабильности.</p>
+  <p>Отправляются версия приложения, модель устройства, версия Android, записи о повороте и определении приложений, необходимые сообщения ошибок и трассировки, а также случайный ID отчёта. Уникальные идентификаторы устройства и рекламы, почта, пароли, токены, изображения и содержимое экрана, введённый текст, видео и история браузера исключаются или маскируются. Сервер также скрывает типичные чувствительные выражения, но не гарантирует удаления всех персональных данных.</p>
+  <p>Просмотр доступен только разработчику после входа администратора. Журналы не публикуются в отзывах и не используются для рекламы или профилирования. Доступны последние 30 дней серверных журналов; просроченные записи удаляются при новой отправке или запросе списка администратором. Хранятся до 1 000 отчётов; после достижения лимита новые отклоняются без перезаписи старых. При сбое локальные журналы сохраняются, и пользователь может повторить отправку.</p>
+  <p>Сервер ограничивает отправки по IP для защиты от спама. Исходный IP не сохраняется в базе отчётов; отдельно обрабатываются хешированные ключи ограничения с секретом сервера и временным интервалом. Cloudflare обеспечивает хостинг и хранение и может обрабатывать сведения о запросах, включая IP, для предоставления и защиты услуг.</p>
+  <p>Для удаления серверного отчёта отправьте его ID на указанную ниже почту. Повторно прикладывать журналы или пароли не требуется.</p>
+  <p><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></p>
+
+  <h2>7. Ответственность и контактная информация</h2>
   <p>По любым вопросам касательно настоящей Политики конфиденциальности или обработки данных вы можете связаться по электронной почте:</p>
   <p><strong>Контактный e-mail:</strong> <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p>
 </article>
@@ -540,7 +604,7 @@
 <!-- ==================== 9. Deutsch (DE) ==================== -->
 <article id="lang-de" class="policy-content">
   <div class="card">
-    <strong>Inkrafttreten:</strong> 23. März 2026<br>
+    <strong>Inkrafttreten:</strong> 13. Oktober 2026<br>
     <strong>Entwickler:</strong> Lee Seokhee (svbreqwaiu01@gmail.com)<br>
     <strong>App-Name:</strong> RoteCat (Paketname: app.rotecat)
   </div>
@@ -555,7 +619,7 @@
     <li><strong>Werbebezogene Informationen:</strong> Bei Werbeeinblendungen in der kostenlosen Version kann das Google Mobile Ads SDK Werbekennungen (AD_ID), den ungefähren Standort, Gerätekennungen und Diagnosedaten gemäß den Richtlinien von Google verarbeiten.</li>
     <li><strong>In-App-Käufe:</strong> Google Play wickelt Zahlungen für Spenden zur Werbeentfernung ab. Die App fragt lediglich die Produkt-ID und den Kauftoken zur Freischaltung ab. Der Entwickler erfasst oder speichert zu keinem Zeitpunkt Kreditkarten- oder Bankdaten.</li>
   </ul>
-  <p><em>※ Diese App ist in keiner Weise darauf ausgelegt, vom Nutzer eingegebene Texte (Passwörter, Nachrichten, Suchbegriffe), Videoinhalte oder Browserverläufe über den Barrierefreiheitsdienst zu erfassen, und speichert oder überträgt keine personenbezogenen Daten an Remoteserver.</em></p>
+  <p><em>Die App erfasst oder übermittelt über den Barrierefreiheitsdienst keine Passwörter, Nachrichten, Suchbegriffe, Bildschirm- oder Videoinhalte oder Browserverläufe. Die nachfolgend beschriebenen Diagnosen werden nur mit ausdrücklicher Einwilligung gesendet.</em></p>
 
   <h2>2. Zweck der Datenverarbeitung</h2>
   <ul>
@@ -570,7 +634,7 @@
   <ul>
     <li><strong>Barrierefreiheitsdienst (AccessibilityService):</strong> Wird ausschließlich dazu verwendet, lokal auf dem Gerät in Echtzeit festzustellen, ob ein Video auf YouTube oder in Browsern im Vollbildmodus wiedergegeben wird. Es handelt sich um keine Eingabehilfe für Behinderungen; der Dienst ist strikt auf die Drehautomatik beschränkt.</li>
     <li><strong>Systemeinstellungen ändern (WRITE_SETTINGS):</strong> Erforderlich zum Sperren/Entsperren der automatischen Drehung, zum Ändern der Displayausrichtung und zum Wiederherstellen der ursprünglichen Konfiguration.</li>
-    <li><strong>Netzwerkberechtigungen (INTERNET, ACCESS_NETWORK_STATE):</strong> Notwendig zum Laden von Google AdMob-Anzeigen und zur Überprüfung von In-App-Käufen über Google Play.</li>
+    <li><strong>Netzwerkberechtigungen (INTERNET, ACCESS_NETWORK_STATE):</strong> Für AdMob, Google-Play-Zahlungsprüfung und die HTTPS-Übermittlung von Diagnoseprotokollen mit Einwilligung des Nutzers verwendet.</li>
     <li><strong>Werbe-ID-Berechtigung (AD_ID):</strong> Gemäß den Richtlinien von Google Play für Werbezwecke und Analysen deklariert.</li>
   </ul>
 
@@ -580,12 +644,20 @@
     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Datenschutzerklärung</a></li>
     <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Datennutzung durch Google bei Websites und Apps</a></li>
   </ul>
-  <p>Der Entwickler verkauft oder übermittelt unter keinen Umständen personenbezogene Daten an Dritte. Die über den Barrierefreiheitsdienst geprüften Bildschirmstrukturen werden niemals für personalisierte Werbung genutzt oder nach außen weitergegeben.</p>
+  <p>Der Entwickler verkauft keine personenbezogenen Daten und gibt sie nicht an unbeteiligte Dritte weiter. Diagnoseberichte mit Einwilligung werden für den Entwickler über den unten beschriebenen Cloudflare-Hostingdienst verarbeitet. Vom Barrierefreiheitsdienst geprüfte Bildschirmstrukturen und -inhalte werden weder für personalisierte Werbung verwendet noch extern übermittelt.</p>
 
   <h2>5. Datenspeicherung und Löschung</h2>
-  <p>Alle Konfigurationsdaten und Wiederherstellungswerte verbleiben ausnahmslos im internen Gerätespeicher des Nutzers. Wenn der Nutzer die App-Daten löscht oder die App deinstalliert, werden alle gespeicherten Daten unmittelbar und unwiderruflich entfernt. Da kein Benutzerkontensystem vorhanden ist, existieren auf den Entwicklerservern keine Kontodaten.</p>
+  <p>Einstellungen, Werte zur Drehungswiederherstellung und lokale Protokolle bleiben auf dem Gerät und werden dort beim Löschen der App-Daten oder Deinstallieren entfernt. Es gibt keine Benutzerkonten. Bereits gesendete Berichte werden durch Deinstallation nicht sofort vom Server gelöscht; dafür gilt die separate Regelung unten.</p>
 
-  <h2>6. Datenschutzverantwortung und Kontakt</h2>
+  <h2>6. Freiwillige Übermittlung von Diagnoseprotokollen</h2>
+  <p>Protokolle werden nur nach Auswahl des Versands und Bestätigung von „Fehlerprotokolle an den Entwickler senden?“ per HTTPS an https://seokiapps.com/api/diagnostics/submit gesendet. App-Start oder ein Fehler allein lösen keinen automatischen Versand aus. Zweck sind Fehleruntersuchung und Stabilitätsverbesserung.</p>
+  <p>Übermittelt werden App-Version, Gerätemodell, Android-Version, Aufzeichnungen zur Drehung und App-Erkennung, erforderliche Fehlermeldungen und Stacktraces sowie eine zufällige Berichts-ID. Eindeutige Geräte- oder Werbe-IDs, E-Mail-Adressen, Passwörter, Tokens, Bildschirmbilder oder -inhalte, Eingabetext, Videos und Browserverläufe werden ausgeschlossen oder maskiert. Der Server maskiert zusätzlich typische sensible Ausdrücke, garantiert aber keine vollständige Entfernung personenbezogener Informationen.</p>
+  <p>Nur der Entwickler kann Protokolle nach Administrator-Anmeldung lesen. Sie erscheinen nicht in öffentlichen Rückmeldungen und dienen nicht der Werbung oder Nutzerprofilen. Nur die letzten 30 Tage sind abrufbar; abgelaufene Berichte werden bei einer neuen Einsendung oder Administrator-Listenabfrage gelöscht. Höchstens 1.000 Berichte werden gespeichert; bei Erreichen der Grenze werden neue abgewiesen, nicht alte überschrieben. Bei einem Fehler bleiben lokale Protokolle erhalten und der Nutzer kann erneut senden.</p>
+  <p>Der Server begrenzt Einsendungen anhand der IP zum Spamschutz. Die Berichts-Datenbank speichert keine rohe IP; separate Begrenzungsschlüssel werden mit einem Servergeheimnis und Zeitfenster gehasht. Cloudflare stellt Hosting und Speicherung bereit und kann Anfrageinformationen einschließlich IP zur Bereitstellung und Absicherung seiner Dienste verarbeiten.</p>
+  <p>Für die Löschung eines Serverberichts senden Sie dessen ID an die unten angegebene E-Mail-Adresse. Protokolle oder Passwörter müssen nicht erneut angehängt werden.</p>
+  <p><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></p>
+
+  <h2>7. Datenschutzverantwortung und Kontakt</h2>
   <p>Bei Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung von Daten wenden Sie sich bitte per E-Mail an:</p>
   <p><strong>Kontakt-E-Mail:</strong> <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p>
 </article>
@@ -593,7 +665,7 @@
 <!-- ==================== 10. हिन्दी (HI) ==================== -->
 <article id="lang-hi" class="policy-content">
   <div class="card">
-    <strong>प्रभावी तिथि:</strong> 23 मार्च 2026<br>
+    <strong>प्रभावी तिथि:</strong> 13 अक्टूबर 2026<br>
     <strong>डेवलपर:</strong> Lee Seokhee (svbreqwaiu01@gmail.com)<br>
     <strong>ऐप का नाम:</strong> RoteCat (पैकेज नाम: app.rotecat)
   </div>
@@ -608,7 +680,7 @@
     <li><strong>विज्ञापन संबंधी जानकारी:</strong> निःशुल्क संस्करण में विज्ञापन प्रदर्शित करते समय, Google Mobile Ads SDK Google की नीतियों के तहत विज्ञापन पहचानकर्ता (AD_ID), अनुमानित स्थान, डिवाइस पहचानकर्ता और डायग्नोस्टिक्स डेटा को संसाधित कर सकता है।</li>
     <li><strong>इन-ऐप खरीदारी की जानकारी:</strong> विज्ञापन हटाने (डेवलपर सहायता) के लिए भुगतान Google Play द्वारा सुरक्षित रूप से संसाधित किया जाता है। ऐप केवल विज्ञापन हटाने के सत्यापन के लिए उत्पाद आईडी और खरीदारी टोकन का उपयोग करता है। डेवलपर कभी भी क्रेडिट कार्ड या वित्तीय जानकारी एकत्र या संग्रहीत नहीं करता है।</li>
   </ul>
-  <p><em>※ यह ऐप कभी भी एक्सेसिबिलिटी सेवा के माध्यम से उपयोगकर्ता द्वारा दर्ज किए गए टेक्स्ट (पासवर्ड, संदेश, खोज शब्द), वीडियो सामग्री या वेब ब्राउज़िंग इतिहास एकत्र करने के लिए डिज़ाइन नहीं किया गया है, और किसी भी व्यक्तिगत डेटा को बाहरी सर्वर पर संग्रहीत या प्रेषित नहीं करता है।</em></p>
+  <p><em>ऐप एक्सेसिबिलिटी सेवा से पासवर्ड, संदेश, खोज शब्द, स्क्रीन या वीडियो सामग्री और ब्राउज़िंग इतिहास एकत्र या भेजता नहीं है। नीचे दिए निदान रिकॉर्ड केवल उपयोगकर्ता की स्पष्ट सहमति पर भेजे जाते हैं।</em></p>
 
   <h2>2. जानकारी के उपयोग का उद्देश्य</h2>
   <ul>
@@ -623,7 +695,7 @@
   <ul>
     <li><strong>एक्सेसिबिलिटी सेवा (AccessibilityService):</strong> केवल डिवाइस पर स्थानीय रूप से वास्तविक समय में यह पता लगाने के लिए उपयोग की जाती है कि YouTube या ब्राउज़र में वीडियो फ़ुल-स्क्रीन में चल रहा है या नहीं। यह विकलांगता सहायता उपकरण नहीं है और इसका उपयोग सख्ती से स्क्रीन रोटेशन ऑटोमेशन तक सीमित है।</li>
     <li><strong>सिस्टम सेटिंग्स संशोधित करने की अनुमति (WRITE_SETTINGS):</strong> स्क्रीन ऑटो-रोटेशन लॉक/अनलॉक करने, स्क्रीन दिशा बदलने और मूल सेटिंग्स को पुनर्स्थापित करने के लिए आवश्यक है।</li>
-    <li><strong>नेटवर्क अनुमतियां (INTERNET, ACCESS_NETWORK_STATE):</strong> Google AdMob विज्ञापन लोड करने और Google Play इन-ऐप बिलिंग सत्यापन के लिए आवश्यक हैं।</li>
+    <li><strong>नेटवर्क अनुमतियां (INTERNET, ACCESS_NETWORK_STATE):</strong> AdMob विज्ञापन, Google Play भुगतान सत्यापन और उपयोगकर्ता की सहमति से निदान लॉग के HTTPS प्रेषण के लिए उपयोग होती हैं।</li>
     <li><strong>विज्ञापन आईडी अनुमति (AD_ID):</strong> विज्ञापन और विश्लेषण के लिए Google Play नीति के अनुपालन में घोषित की गई है।</li>
   </ul>
 
@@ -633,12 +705,20 @@
     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google गोपनीयता नीति</a></li>
     <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google अपनी सेवाओं का उपयोग करने वाली साइटों या ऐप्स से जानकारी का उपयोग कैसे करता है</a></li>
   </ul>
-  <p>डेवलपर किसी भी परिस्थिति में उपयोगकर्ताओं की व्यक्तिगत जानकारी को बेचता या अनधिकृत तृतीय पक्षों के साथ साझा नहीं करता है। एक्सेसिबिलिटी सेवा द्वारा जांची गई स्क्रीन लेआउट जानकारी का उपयोग कभी भी विज्ञापन वैयक्तिकरण के लिए नहीं किया जाता है और न ही बाहर भेजा जाता है।</p>
+  <p>डेवलपर निजी जानकारी बेचता या असंबंधित तीसरे पक्षों को देता नहीं है। सहमति वाले निदान रिपोर्ट नीचे बताए Cloudflare होस्टिंग पर डेवलपर के लिए संसाधित होते हैं। एक्सेसिबिलिटी से जांची गई स्क्रीन संरचना और सामग्री विज्ञापन वैयक्तिकरण में उपयोग या बाहर भेजी नहीं जाती।</p>
 
   <h2>5. डेटा प्रतिधारण और विलोपन</h2>
-  <p>सभी सेटिंग्स और रोटेशन रीस्टोर डेटा केवल उपयोगकर्ता के डिवाइस की आंतरिक मेमोरी में संग्रहीत होते हैं। जब उपयोगकर्ता ऐप डेटा साफ़ करता है या ऐप को अनइंस्टॉल करता है, तो सभी डेटा तुरंत और स्थायी रूप से हटा दिया जाता है। कोई खाता प्रणाली न होने के कारण डेवलपर सर्वर पर कोई खाता डेटा मौजूद नहीं होता है।</p>
+  <p>सेटिंग्स, रोटेशन बहाली मान और स्थानीय लॉग डिवाइस पर रहते हैं और ऐप डेटा साफ़ करने या ऐप हटाने पर डिवाइस से हटते हैं। उपयोगकर्ता खाते नहीं हैं। ऐप हटाने से पहले भेजे गए सर्वर लॉग तुरंत नहीं हटते; उन पर नीचे दी अलग नीति लागू होती है।</p>
 
-  <h2>6. गोपनीयता दायित्व और संपर्क</h2>
+  <h2>6. वैकल्पिक त्रुटि निदान लॉग भेजना</h2>
+  <p>उपयोगकर्ता त्रुटि लॉग भेजना चुनकर “क्या त्रुटि लॉग डेवलपर को भेजें?” की पुष्टि करता है तभी https://seokiapps.com/api/diagnostics/submit पर HTTPS से भेजा जाता है। ऐप शुरू होने या त्रुटि होने से अपने-आप नहीं भेजा जाता। उद्देश्य त्रुटि की जांच और स्थिरता सुधारना है।</p>
+  <p>भेजी गई जानकारी में ऐप संस्करण, डिवाइस मॉडल, Android संस्करण, रोटेशन और ऐप पहचान रिकॉर्ड, आवश्यक त्रुटि संदेश व स्टैक ट्रेस तथा रिपोर्ट पहचान के लिए यादृच्छिक ID शामिल हैं। विशिष्ट डिवाइस या विज्ञापन ID, ईमेल, पासवर्ड, टोकन, स्क्रीन चित्र या सामग्री, दर्ज किया गया पाठ, वीडियो और ब्राउज़िंग इतिहास बाहर रखे या छिपाए जाते हैं। सर्वर भी सामान्य संवेदनशील अभिव्यक्तियां छिपाता है, लेकिन सभी निजी जानकारी हटाने की गारंटी नहीं देता।</p>
+  <p>केवल डेवलपर व्यवस्थापक लॉगिन के बाद लॉग देख सकता है। वे सार्वजनिक प्रतिक्रिया, विज्ञापन या उपयोगकर्ता प्रोफाइलिंग में उपयोग नहीं होते। सर्वर के पिछले 30 दिनों के लॉग ही देखे जा सकते हैं; पुराने रिकॉर्ड नई रिपोर्ट या व्यवस्थापक सूची अनुरोध पर हटते हैं। अधिकतम 1,000 रिपोर्ट रखी जाती हैं; सीमा पर नई रिपोर्ट अस्वीकार होती है, पुरानी बदली नहीं जाती। विफल प्रेषण पर स्थानीय लॉग रहते हैं और उपयोगकर्ता फिर प्रयास कर सकता है।</p>
+  <p>सर्वर स्पैम रोकने के लिए IP आधारित प्रेषण सीमा लगाता है। रिपोर्ट डेटाबेस में मूल IP नहीं रखता; सर्वर गुप्त मान और समय खंड से बने हैश सीमा कुंजी अलग संसाधित होती हैं। Cloudflare होस्टिंग और संग्रहण देता है और सेवाएं उपलब्ध व सुरक्षित रखने के लिए IP सहित अनुरोध जानकारी संसाधित कर सकता है।</p>
+  <p>सर्वर रिपोर्ट हटवाने के लिए नीचे दिए ईमेल पर उसकी ID भेजें। लॉग या पासवर्ड फिर संलग्न करने की आवश्यकता नहीं है।</p>
+  <p><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></p>
+
+  <h2>7. गोपनीयता दायित्व और संपर्क</h2>
   <p>इस गोपनीयता नीति या डेटा प्रसंस्करण के संबंध में किसी भी प्रश्न के लिए, कृपया निम्नलिखित ईमेल पर संपर्क करें:</p>
   <p><strong>संपर्क ईमेल:</strong> <a href="mailto:svbreqwaiu01@gmail.com">svbreqwaiu01@gmail.com</a></p>
 </article>
