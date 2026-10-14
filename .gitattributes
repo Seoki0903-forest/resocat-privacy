@@ -1,0 +1,3 @@
+downloads/*.exe binary
+downloads/*.zip binary
+downloads/*.txt -text
