@@ -10,9 +10,9 @@ Android アプリごとに好きな画面解像度を設定できます。
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.1**
+**ResoCat USB Permission Helper 1.0.2**
 
-Windows PC と USB 接続した Android スマートフォン・タブレットで、ResoCat の初期権限を設定する無料ツールです。64 ビット版 Windows 10/11 と .NET Framework 4.5 以上が必要です。ADB は EXE に含まれており、別途インストールや解凍は不要です。ツールの表示は韓国語の Windows では韓国語、それ以外では英語です。このガイドは ResoCat の全 13 対応言語で提供しています。
+Windows PC と USB 接続した Android スマートフォン・タブレットで、ResoCat の初期権限を設定する無料ツールです。64 ビット版 Windows 10/11 と .NET Framework 4.5 以上が必要です。ADB は EXE に含まれており、別途インストールや解凍は不要です。プログラムの表示はすべての Windows で英語です。このガイドは ResoCat の全 13 対応言語で提供しています。
 
 [SHA-256](downloads/SHA256SUMS.txt) · [ソースコード](usb-helper/source/ResoCatAdbHelper.cs)
 
@@ -25,6 +25,12 @@ Windows PC と USB 接続した Android スマートフォン・タブレット�
 5. 公式 GitHub からダウンロードした `ResoCat-ADB-Helper.exe` を実行します。
 6. 端末を選び、**Set permissions and open ResoCat** を押します。接続端末が 1 台の場合は自動選択されます。
 7. 完了メッセージを確認し、端末の ResoCat で利用規約と残りの設定を自分で確認します。その後 USB を取り外せます。
+
+### ボタンの説明
+
+- **Refresh devices** — 端末を検索し、一覧を更新します。
+- **Set permissions and open ResoCat** — 選択した端末に権限を設定して ResoCat を起動します。このボタンで設定を開始します。
+- **Save result** — サポートが必要な場合に結果ログを TXT として保存します。必須ではありません。
 
 接続の問題：`unauthorized` の場合は端末のロックを解除して USB デバッグを許可し、**Refresh devices** を押してください。`offline` の場合は USB を接続し直してください。端末が表示されない場合は USB デバッグ、ケーブル、メーカーの USB ドライバーを確認します。一部完了の場合は ResoCat の案内に従って Android 設定で使用状況へのアクセスを許可してください。メーカーや管理端末の制限は回避しません。
 

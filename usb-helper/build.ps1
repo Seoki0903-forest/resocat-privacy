@@ -22,5 +22,5 @@ New-Item -ItemType Directory -Path (Join-Path $taskPackage 'source') -Force | Ou
 Copy-Item -LiteralPath (Join-Path $taskRoot 'source/ResoCatAdbHelper.cs') -Destination (Join-Path $taskPackage 'source') -Force
 $taskLegacySource = Join-Path $taskPackage 'ResoCatAdbHelper.cs'
 if (Test-Path -LiteralPath $taskLegacySource) { Remove-Item -LiteralPath $taskLegacySource }
-Compress-Archive -LiteralPath $taskPackage -DestinationPath (Join-Path $taskRoot 'ResoCat-ADB-Helper-1.0.1-Windows.zip') -Force
-Get-FileHash -LiteralPath (Join-Path $taskRoot 'ResoCat-ADB-Helper-1.0.1-Windows.zip') -Algorithm SHA256
+Compress-Archive -LiteralPath $taskPackage -DestinationPath (Join-Path $taskRoot 'ResoCat-ADB-Helper-1.0.2-Windows.zip') -Force
+Get-FileHash -LiteralPath (Join-Path $taskRoot 'ResoCat-ADB-Helper-1.0.2-Windows.zip') -Algorithm SHA256

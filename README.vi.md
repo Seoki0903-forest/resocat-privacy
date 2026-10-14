@@ -10,9 +10,9 @@
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.1**
+**ResoCat USB Permission Helper 1.0.2**
 
-Công cụ miễn phí để cấp quyền ban đầu cho ResoCat trên điện thoại hoặc máy tính bảng Android kết nối với máy tính Windows qua USB. Yêu cầu Windows 10/11 64-bit và .NET Framework 4.5 trở lên. ADB đã được tích hợp trong EXE; không cần cài đặt riêng hay giải nén. Giao diện dùng tiếng Hàn trên Windows tiếng Hàn, còn lại dùng tiếng Anh. Hướng dẫn có đủ 13 ngôn ngữ của ResoCat.
+Công cụ miễn phí để cấp quyền ban đầu cho ResoCat trên điện thoại hoặc máy tính bảng Android kết nối với máy tính Windows qua USB. Yêu cầu Windows 10/11 64-bit và .NET Framework 4.5 trở lên. ADB đã được tích hợp trong EXE; không cần cài đặt riêng hay giải nén. Giao diện chương trình dùng tiếng Anh trên mọi hệ thống Windows. Hướng dẫn có đủ 13 ngôn ngữ của ResoCat.
 
 [SHA-256](downloads/SHA256SUMS.txt) · [Mã nguồn](usb-helper/source/ResoCatAdbHelper.cs)
 
@@ -25,6 +25,12 @@ Công cụ miễn phí để cấp quyền ban đầu cho ResoCat trên điện 
 5. Chạy `ResoCat-ADB-Helper.exe` tải từ kho GitHub chính thức.
 6. Chọn thiết bị rồi nhấn **Set permissions and open ResoCat**. Nếu chỉ có một thiết bị, công cụ tự chọn.
 7. Kiểm tra thông báo hoàn tất, rồi tự xem điều khoản và các cài đặt còn lại trong ResoCat. Sau đó có thể rút USB.
+
+### Hướng dẫn các nút
+
+- **Refresh devices** — Tìm thiết bị hoặc làm mới danh sách.
+- **Set permissions and open ResoCat** — Cấp quyền cho thiết bị đã chọn và mở ResoCat. Nhấn nút này để bắt đầu thiết lập.
+- **Save result** — Lưu nhật ký kết quả thành tệp TXT nếu cần hỗ trợ. Bước này không bắt buộc.
 
 Lỗi kết nối: Với `unauthorized`, mở khóa, cho phép gỡ lỗi USB rồi nhấn **Refresh devices**. Với `offline`, kết nối lại USB. Nếu không có thiết bị, kiểm tra gỡ lỗi USB, cáp dữ liệu và trình điều khiển USB của nhà sản xuất. Nếu chỉ hoàn tất một phần, bật quyền truy cập dữ liệu sử dụng trong cài đặt Android do ResoCat hướng dẫn. Công cụ không vượt qua giới hạn của nhà sản xuất hoặc chính sách thiết bị được quản lý.
 

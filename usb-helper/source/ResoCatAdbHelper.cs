@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
-using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Text;
@@ -12,17 +11,15 @@ using System.Windows.Forms;
 
 [assembly: AssemblyTitle("ResoCat USB Permission Helper")]
 [assembly: AssemblyProduct("ResoCat USB Permission Helper")]
-[assembly: AssemblyVersion("1.0.1.0")]
-[assembly: AssemblyFileVersion("1.0.1.0")]
+[assembly: AssemblyVersion("1.0.2.0")]
+[assembly: AssemblyFileVersion("1.0.2.0")]
 
 static class ResoCatAdbHelper
 {
     const string Package = "app.resocat.switcher";
     const string Permission = "android.permission.WRITE_SECURE_SETTINGS";
-    static readonly bool Korean = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "ko";
     static string adbDirectory;
     static readonly string[] AdbFiles = { "adb.exe", "AdbWinApi.dll", "AdbWinUsbApi.dll", "libwinpthread-1.dll", "NOTICE.txt" };
-    static string T(string ko, string en) { return Korean ? ko : en; }
 
     [STAThread]
     static int Main(string[] args)
@@ -101,7 +98,7 @@ static class ResoCatAdbHelper
             if (!process.WaitForExit(15000))
             {
                 try { process.Kill(); } catch (InvalidOperationException) { }
-                throw new Exception(T("연결 시간이 초과되었습니다. USB 연결과 휴대폰 승인 창을 확인하세요.", "Connection timed out. Check the USB cable and the authorization prompt on your device."));
+                throw new Exception("Connection timed out. Check the USB cable and the authorization prompt on your device.");
             }
             Task.WaitAll(output, error);
             string text = (output.Result + "\n" + error.Result).Trim();
@@ -143,40 +140,40 @@ static class ResoCatAdbHelper
         if (!ValidSerial(serial)) throw new Exception("Invalid USB device serial.");
         var devices = Devices(run("devices -l"));
         string[] device = devices.Find(d => d[0] == serial);
-        if (device == null) throw new Exception(T("선택한 기기가 연결되어 있지 않습니다. 기기 목록을 새로고침하세요.", "Selected device is disconnected. Refresh the device list."));
-        if (device[1] != "device") throw new Exception(T("휴대폰 잠금을 풀고 USB 디버깅 허용을 누르세요. offline이면 USB를 다시 연결하세요.", "Unlock your device and allow USB debugging. Reconnect the cable if the device is offline."));
+        if (device == null) throw new Exception("Selected device is disconnected. Refresh the device list.");
+        if (device[1] != "device") throw new Exception("Unlock your device and allow USB debugging. Reconnect the cable if the device is offline.");
         string prefix = "-s " + serial + " shell ";
         string user = run(prefix + "am get-current-user").Trim();
         if (!Regex.IsMatch(user, @"\A\d+\z")) throw new Exception("Cannot identify the active Android user.");
         string installed = run(prefix + "pm path --user " + user + " " + Package);
-        if (!Regex.IsMatch(installed, @"(?m)^package:")) throw new Exception(T("현재 사용자에 ResoCat이 설치되어 있지 않습니다. Google Play에서 먼저 설치하세요.", "ResoCat is not installed for the active user. Install it from Google Play first."));
-        log(T("해상도 변경 권한을 설정합니다…", "Granting resolution permission…"));
+        if (!Regex.IsMatch(installed, @"(?m)^package:")) throw new Exception("ResoCat is not installed for the active user. Install it from Google Play first.");
+        log("Granting resolution permission…");
         run(prefix + "pm grant --user " + user + " " + Package + " " + Permission);
         if (!PermissionGranted(run(prefix + "dumpsys package " + Package), user))
-            throw new Exception(T("해상도 변경 권한을 확인하지 못했습니다. 제조사 보안 설정 또는 기기 정책을 확인하세요.", "Resolution permission could not be verified. Check manufacturer security settings or device policies."));
-        log(T("해상도 변경 권한 확인 완료.", "Resolution permission verified."));
-        log(T("사용정보 접근 권한을 설정합니다…", "Enabling Usage Access…"));
+            throw new Exception("Resolution permission could not be verified. Check manufacturer security settings or device policies.");
+        log("Resolution permission verified.");
+        log("Enabling Usage Access…");
         string usageFailure = null;
         try
         {
             run(prefix + "appops set --user " + user + " " + Package + " GET_USAGE_STATS allow");
             string usage = run(prefix + "appops get --user " + user + " " + Package + " GET_USAGE_STATS");
             if (!UsageAllowed(usage)) throw new Exception(usage);
-            log(T("사용정보 접근 권한 확인 완료.", "Usage Access verified."));
+            log("Usage Access verified.");
         }
         catch (Exception e) { usageFailure = e.Message; }
         if (run(prefix + "am get-current-user").Trim() != user)
-            throw new Exception(T("설정 중 Android 사용자가 변경되었습니다. 새로고침 후 다시 실행하세요.", "The active Android user changed. Refresh and try again."));
-        log(T("ResoCat을 실행합니다…", "Opening ResoCat…"));
+            throw new Exception("The active Android user changed. Refresh and try again.");
+        log("Opening ResoCat…");
         string launch = run(prefix + "am start --user " + user + " -n " + Package + "/.MainActivity");
         if (Regex.IsMatch(launch, @"(?im)^\s*(Error:|Exception|SecurityException)")) throw new Exception(launch);
         if (usageFailure != null)
         {
-            log(T("일부 완료: 해상도 권한은 설정했습니다. 앱에서 열리는 사용정보 접근 설정을 직접 허용하세요.", "Partially complete: resolution permission is ready. Enable Usage Access in the settings opened by ResoCat."));
+            log("Partially complete: resolution permission is ready. Enable Usage Access in the settings opened by ResoCat.");
             log(usageFailure);
             return;
         }
-        log(T("완료! 휴대폰의 ResoCat에서 이용약관과 필요한 설정을 확인하세요. USB 연결을 해제해도 됩니다.", "Done! Check the terms and any remaining settings in ResoCat. You can disconnect USB."));
+        log("Done! Check the terms and any remaining settings in ResoCat. You can disconnect USB.");
     }
 
     static bool UsageAllowed(string text)
@@ -189,15 +186,15 @@ static class ResoCatAdbHelper
     sealed class HelperWindow : Form
     {
         readonly ComboBox devices = new ComboBox { DropDownStyle = ComboBoxStyle.DropDownList, Dock = DockStyle.Top };
-        readonly Button refresh = new Button { AutoSize = true, Text = T("기기 새로고침", "Refresh devices") };
-        readonly Button grant = new Button { AutoSize = true, Text = T("권한 설정 및 ResoCat 실행", "Set permissions and open ResoCat") };
-        readonly Button save = new Button { AutoSize = true, Text = T("결과 저장", "Save result") };
+        readonly Button refresh = new Button { AutoSize = true, Text = "Refresh devices" };
+        readonly Button grant = new Button { AutoSize = true, Text = "Set permissions and open ResoCat" };
+        readonly Button save = new Button { AutoSize = true, Text = "Save result" };
         readonly TextBox output = new TextBox { Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical, Dock = DockStyle.Fill };
         bool busy;
 
         public HelperWindow(bool preview = false)
         {
-            Text = "ResoCat USB Permission Helper 1.0.1";
+            Text = "ResoCat USB Permission Helper 1.0.2";
             ClientSize = new Size(690, 420);
             MinimumSize = new Size(560, 360);
             AutoScaleMode = AutoScaleMode.Font;
@@ -207,9 +204,7 @@ static class ResoCatAdbHelper
             layout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
             layout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
             layout.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
-            layout.Controls.Add(new Label { AutoSize = true, MaximumSize = new Size(650, 0), Margin = new Padding(0, 0, 0, 12), Text = T(
-                "ResoCat을 설치하고 USB 디버깅을 켠 뒤 USB로 연결하세요.\n휴대폰에서 이 컴퓨터의 USB 디버깅을 허용하세요.\n선택한 기기의 해상도 변경 권한과 사용정보 접근 권한만 설정합니다.",
-                "Install ResoCat, enable USB debugging and connect with USB.\nAllow this computer on your device's USB debugging prompt.\nThis tool sets resolution permission and Usage Access for the selected device only.") });
+            layout.Controls.Add(new Label { AutoSize = true, MaximumSize = new Size(650, 0), Margin = new Padding(0, 0, 0, 12), Text = "Install ResoCat, enable USB debugging and connect with USB.\nAllow this computer on your device's USB debugging prompt.\nThis tool sets resolution permission and Usage Access for the selected device only." });
             layout.Controls.Add(devices);
             var buttons = new FlowLayoutPanel { AutoSize = true, Dock = DockStyle.Fill, Margin = new Padding(0, 10, 0, 10) };
             buttons.Controls.AddRange(new Control[] { refresh, grant, save });
@@ -220,7 +215,7 @@ static class ResoCatAdbHelper
             refresh.Click += async (s, e) => await RefreshDevices();
             grant.Click += async (s, e) => {
                 var item = devices.SelectedItem as DeviceItem;
-                if (item == null) { Log(T("권한을 설정할 기기를 선택하세요.", "Select the device to configure.")); return; }
+                if (item == null) { Log("Select the device to configure."); return; }
                 await Work(() => Grant(item.Serial, Adb, Log));
             };
             save.Click += (s, e) => {
@@ -230,7 +225,7 @@ static class ResoCatAdbHelper
                         catch (Exception error) { Log(error.Message); }
             };
             if (!preview) Shown += async (s, e) => await RefreshDevices();
-            FormClosing += (s, e) => { if (busy) { e.Cancel = true; Log(T("설정 중입니다. 완료 후 닫아주세요.", "Please wait until the operation finishes before closing.")); } };
+            FormClosing += (s, e) => { if (busy) { e.Cancel = true; Log("Please wait until the operation finishes before closing."); } };
         }
 
         void Log(string text)
@@ -243,7 +238,7 @@ static class ResoCatAdbHelper
         {
             busy = true; refresh.Enabled = grant.Enabled = devices.Enabled = false;
             try { await Task.Run(action); }
-            catch (Exception e) { Log(T("설정을 완료하지 못했습니다: ", "Setup did not complete: ") + e.Message); }
+            catch (Exception e) { Log("Setup did not complete: " + e.Message); }
             finally { busy = false; refresh.Enabled = devices.Enabled = true; grant.Enabled = devices.Items.Count > 0; }
         }
 
@@ -256,7 +251,7 @@ static class ResoCatAdbHelper
                     foreach (var d in found) devices.Items.Add(new DeviceItem(d));
                     if (devices.Items.Count == 1) devices.SelectedIndex = 0;
                 }));
-                Log(found.Count == 0 ? T("USB 기기가 없습니다. 디버깅, 데이터 케이블, USB 드라이버를 확인하세요.", "No USB device found. Check USB debugging, the data cable and USB drivers.") : T("기기를 선택하고 권한 설정 버튼을 누르세요. unauthorized는 휴대폰 승인이 필요합니다.", "Select your device and press Set permissions. Unauthorized devices need approval on the device."));
+                Log(found.Count == 0 ? "No USB device found. Check USB debugging, the data cable and USB drivers." : "Select your device and click Set permissions and open ResoCat. Unauthorized devices need approval on the device.");
             });
         }
     }

@@ -10,9 +10,9 @@ Her Android uygulaması için ayrı ekran çözünürlüğü ayarlayın.
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.1**
+**ResoCat USB Permission Helper 1.0.2**
 
-USB ile Windows bilgisayara bağlanan Android telefon veya tablette ResoCat’in başlangıç izinlerini ayarlayan ücretsiz araç. 64 bit Windows 10/11 ve .NET Framework 4.5+ gerekir. ADB, EXE’ye dahildir; ayrı kurulum veya dosya çıkarma gerekmez. Araç arayüzü Korece Windows’ta Korece, diğer sistemlerde İngilizcedir. Bu kılavuz ResoCat’in 13 dilini kapsar.
+USB ile Windows bilgisayara bağlanan Android telefon veya tablette ResoCat’in başlangıç izinlerini ayarlayan ücretsiz araç. 64 bit Windows 10/11 ve .NET Framework 4.5+ gerekir. ADB, EXE’ye dahildir; ayrı kurulum veya dosya çıkarma gerekmez. Program arayüzü tüm Windows sistemlerinde İngilizcedir. Bu kılavuz ResoCat’in 13 dilini kapsar.
 
 [SHA-256](downloads/SHA256SUMS.txt) · [Kaynak kodu](usb-helper/source/ResoCatAdbHelper.cs)
 
@@ -25,6 +25,12 @@ USB ile Windows bilgisayara bağlanan Android telefon veya tablette ResoCat’in
 5. Resmî GitHub deposundan indirdiğiniz `ResoCat-ADB-Helper.exe` dosyasını çalıştırın.
 6. Cihazı seçip **Set permissions and open ResoCat** düğmesine basın. Tek cihaz varsa otomatik seçilir.
 7. Tamamlanma mesajını kontrol edin; ResoCat’te koşulları ve kalan ayarları kendiniz inceleyin. Sonra USB bağlantısını kesebilirsiniz.
+
+### Düğmeler
+
+- **Refresh devices** — Cihazları bulur veya listeyi yeniler.
+- **Set permissions and open ResoCat** — Seçili cihazın izinlerini ayarlar ve ResoCat’i açar. Kurulumu başlatmak için bu düğmeye basın.
+- **Save result** — Desteğe ihtiyaç duyarsanız sonuç günlüğünü TXT olarak kaydeder. Bu adım isteğe bağlıdır.
 
 Bağlantı sorunları: `unauthorized` için cihazın kilidini açın, USB hata ayıklamaya izin verin ve **Refresh devices** düğmesine basın. `offline` için USB’yi yeniden bağlayın. Cihaz yoksa USB hata ayıklamayı, veri kablosunu ve üreticinin USB sürücülerini kontrol edin. Kısmen tamamlanırsa ResoCat’in gösterdiği Android ayarlarında kullanım erişimini açın. Üretici kısıtlamaları veya yönetilen cihaz politikaları aşılmaz.
 

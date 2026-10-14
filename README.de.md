@@ -10,9 +10,9 @@ Lege für jede Android-App eine eigene Bildschirmauflösung fest.
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.1**
+**ResoCat USB Permission Helper 1.0.2**
 
-Kostenloses Werkzeug zum Einrichten der anfänglichen ResoCat-Berechtigungen auf einem Android-Handy oder -Tablet, das per USB mit einem Windows-PC verbunden ist. Benötigt 64-Bit-Windows 10/11 und .NET Framework 4.5+. ADB ist in der EXE enthalten; keine separate Installation oder Entpackung nötig. Die Oberfläche ist auf koreanischem Windows koreanisch, sonst englisch. Diese Anleitung enthält alle 13 ResoCat-Sprachen.
+Kostenloses Werkzeug zum Einrichten der anfänglichen ResoCat-Berechtigungen auf einem Android-Handy oder -Tablet, das per USB mit einem Windows-PC verbunden ist. Benötigt 64-Bit-Windows 10/11 und .NET Framework 4.5+. ADB ist in der EXE enthalten; keine separate Installation oder Entpackung nötig. Die Programmoberfläche ist auf allen Windows-Systemen auf Englisch. Diese Anleitung enthält alle 13 ResoCat-Sprachen.
 
 [SHA-256](downloads/SHA256SUMS.txt) · [Quellcode](usb-helper/source/ResoCatAdbHelper.cs)
 
@@ -25,6 +25,12 @@ Kostenloses Werkzeug zum Einrichten der anfänglichen ResoCat-Berechtigungen auf
 5. Starte `ResoCat-ADB-Helper.exe` aus dem offiziellen GitHub-Repository.
 6. Wähle dein Gerät und klicke auf **Set permissions and open ResoCat**. Ein einzelnes verbundenes Gerät wird automatisch ausgewählt.
 7. Prüfe die Abschlussmeldung und bestätige die Bedingungen und übrigen Einstellungen selbst in ResoCat. Danach kannst du USB trennen.
+
+### Schaltflächen
+
+- **Refresh devices** — Geräte suchen oder die Liste aktualisieren.
+- **Set permissions and open ResoCat** — Berechtigungen auf dem ausgewählten Gerät einrichten und ResoCat starten. Klicke auf diese Schaltfläche, um die Einrichtung zu starten.
+- **Save result** — Das Ergebnisprotokoll bei Bedarf als TXT für den Support speichern. Dies ist optional.
 
 Verbindungsprobleme: Bei `unauthorized` Gerät entsperren, USB-Debugging erlauben und **Refresh devices** klicken. Bei `offline` USB neu verbinden. Wenn kein Gerät erscheint, USB-Debugging, Datenkabel und Hersteller-USB-Treiber prüfen. Bei teilweisem Abschluss den Zugriff auf Nutzungsdaten in den von ResoCat angegebenen Android-Einstellungen erlauben. Herstellerbeschränkungen und Richtlinien verwalteter Geräte werden nicht umgangen.
 

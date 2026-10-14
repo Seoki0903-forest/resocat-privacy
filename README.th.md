@@ -10,9 +10,9 @@
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.1**
+**ResoCat USB Permission Helper 1.0.2**
 
-เครื่องมือฟรีสำหรับตั้งค่าสิทธิ์เริ่มต้นของ ResoCat บนโทรศัพท์หรือแท็บเล็ต Android ที่เชื่อมต่อกับพีซี Windows ผ่าน USB ต้องใช้ Windows 10/11 แบบ 64 บิต และ .NET Framework 4.5 ขึ้นไป มี ADB รวมอยู่ใน EXE แล้ว ไม่ต้องติดตั้งเพิ่มหรือแตกไฟล์ หน้าจอเครื่องมือเป็นภาษาเกาหลีบน Windows ภาษาเกาหลี และเป็นภาษาอังกฤษบนระบบอื่น คู่มือนี้มีครบทั้ง 13 ภาษาที่ ResoCat รองรับ
+เครื่องมือฟรีสำหรับตั้งค่าสิทธิ์เริ่มต้นของ ResoCat บนโทรศัพท์หรือแท็บเล็ต Android ที่เชื่อมต่อกับพีซี Windows ผ่าน USB ต้องใช้ Windows 10/11 แบบ 64 บิต และ .NET Framework 4.5 ขึ้นไป มี ADB รวมอยู่ใน EXE แล้ว ไม่ต้องติดตั้งเพิ่มหรือแตกไฟล์ หน้าจอโปรแกรมเป็นภาษาอังกฤษบน Windows ทุกระบบ คู่มือนี้มีครบทั้ง 13 ภาษาที่ ResoCat รองรับ
 
 [SHA-256](downloads/SHA256SUMS.txt) · [ซอร์สโค้ด](usb-helper/source/ResoCatAdbHelper.cs)
 
@@ -25,6 +25,12 @@
 5. เปิด `ResoCat-ADB-Helper.exe` ที่ดาวน์โหลดจาก GitHub ทางการ
 6. เลือกอุปกรณ์แล้วกด **Set permissions and open ResoCat** หากเชื่อมต่อเพียงเครื่องเดียวจะเลือกให้อัตโนมัติ
 7. ตรวจสอบข้อความเสร็จสิ้น และตรวจสอบข้อกำหนดกับการตั้งค่าที่เหลือใน ResoCat ด้วยตนเอง จากนั้นถอด USB ได้
+
+### คำอธิบายปุ่ม
+
+- **Refresh devices** — ค้นหาอุปกรณ์หรือรีเฟรชรายการ
+- **Set permissions and open ResoCat** — ตั้งค่าสิทธิ์บนอุปกรณ์ที่เลือกและเปิด ResoCat กดปุ่มนี้เพื่อเริ่มตั้งค่า
+- **Save result** — บันทึกผลลัพธ์เป็นไฟล์ TXT หากต้องการความช่วยเหลือ ขั้นตอนนี้ไม่บังคับ
 
 ปัญหาการเชื่อมต่อ: หากขึ้น `unauthorized` ให้ปลดล็อกและอนุญาตการแก้ไขข้อบกพร่อง USB แล้วกด **Refresh devices** หากขึ้น `offline` ให้เชื่อมต่อ USB ใหม่ หากไม่พบอุปกรณ์ ให้ตรวจสอบการแก้ไขข้อบกพร่อง USB สายข้อมูล และไดรเวอร์ USB ของผู้ผลิต หากเสร็จเพียงบางส่วน ให้เปิดสิทธิ์เข้าถึงข้อมูลการใช้งานในการตั้งค่า Android ตามที่ ResoCat แนะนำ เครื่องมือไม่ข้ามข้อจำกัดของผู้ผลิตหรือนโยบายอุปกรณ์ที่มีผู้ดูแล
 

@@ -10,9 +10,9 @@ Atur resolusi layar khusus untuk setiap aplikasi Android.
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.1**
+**ResoCat USB Permission Helper 1.0.2**
 
-Alat gratis untuk mengatur izin awal ResoCat pada ponsel atau tablet Android melalui USB dari PC Windows. Memerlukan Windows 10/11 64-bit dan .NET Framework 4.5+. ADB sudah ada di EXE; tidak perlu instalasi terpisah atau ekstraksi. Antarmuka alat memakai bahasa Korea pada Windows berbahasa Korea dan bahasa Inggris pada sistem lain. Panduan ini tersedia dalam 13 bahasa ResoCat.
+Alat gratis untuk mengatur izin awal ResoCat pada ponsel atau tablet Android melalui USB dari PC Windows. Memerlukan Windows 10/11 64-bit dan .NET Framework 4.5+. ADB sudah ada di EXE; tidak perlu instalasi terpisah atau ekstraksi. Antarmuka program menggunakan bahasa Inggris pada semua sistem Windows. Panduan ini tersedia dalam 13 bahasa ResoCat.
 
 [SHA-256](downloads/SHA256SUMS.txt) · [Kode sumber](usb-helper/source/ResoCatAdbHelper.cs)
 
@@ -25,6 +25,12 @@ Alat gratis untuk mengatur izin awal ResoCat pada ponsel atau tablet Android mel
 5. Jalankan `ResoCat-ADB-Helper.exe` dari repositori GitHub resmi.
 6. Pilih perangkat lalu klik **Set permissions and open ResoCat**. Jika hanya satu perangkat terhubung, perangkat dipilih otomatis.
 7. Periksa pesan selesai dan tinjau sendiri ketentuan serta pengaturan lain di ResoCat. Setelah itu USB dapat dilepas.
+
+### Panduan tombol
+
+- **Refresh devices** — Cari perangkat atau perbarui daftar.
+- **Set permissions and open ResoCat** — Atur izin pada perangkat yang dipilih dan buka ResoCat. Klik tombol ini untuk memulai pengaturan.
+- **Save result** — Simpan log hasil sebagai TXT jika membutuhkan bantuan. Langkah ini opsional.
 
 Masalah koneksi: Untuk `unauthorized`, buka kunci perangkat, izinkan debugging USB, lalu klik **Refresh devices**. Untuk `offline`, sambungkan ulang USB. Jika perangkat tidak muncul, periksa debugging USB, kabel data dan driver USB produsen. Jika hanya sebagian selesai, aktifkan akses penggunaan melalui pengaturan Android yang ditunjukkan ResoCat. Alat tidak melewati pembatasan produsen atau kebijakan perangkat kantor/sekolah.
 

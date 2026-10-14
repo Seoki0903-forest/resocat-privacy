@@ -10,9 +10,9 @@ Configura una resolución de pantalla para cada aplicación Android.
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.1**
+**ResoCat USB Permission Helper 1.0.2**
 
-Herramienta gratuita para configurar los permisos iniciales de ResoCat en un teléfono o tableta Android conectado por USB a un PC Windows. Requiere Windows 10/11 de 64 bits y .NET Framework 4.5+. El EXE incluye ADB; no requiere instalación adicional ni extracción. La interfaz está en coreano en Windows configurado en coreano y en inglés en los demás sistemas. Esta guía cubre los 13 idiomas de ResoCat.
+Herramienta gratuita para configurar los permisos iniciales de ResoCat en un teléfono o tableta Android conectado por USB a un PC Windows. Requiere Windows 10/11 de 64 bits y .NET Framework 4.5+. El EXE incluye ADB; no requiere instalación adicional ni extracción. La interfaz del programa está en inglés en todos los sistemas Windows. Esta guía cubre los 13 idiomas de ResoCat.
 
 [SHA-256](downloads/SHA256SUMS.txt) · [Código fuente](usb-helper/source/ResoCatAdbHelper.cs)
 
@@ -25,6 +25,12 @@ Herramienta gratuita para configurar los permisos iniciales de ResoCat en un tel
 5. Ejecuta `ResoCat-ADB-Helper.exe` descargado del repositorio oficial de GitHub.
 6. Selecciona el dispositivo y pulsa **Set permissions and open ResoCat**. Si solo hay uno conectado, se selecciona automáticamente.
 7. Comprueba el mensaje de finalización y revisa personalmente los términos y ajustes restantes en ResoCat. Después puedes desconectar el USB.
+
+### Botones
+
+- **Refresh devices** — Busca dispositivos o actualiza la lista.
+- **Set permissions and open ResoCat** — Configura los permisos del dispositivo seleccionado y abre ResoCat. Pulsa este botón para iniciar la configuración.
+- **Save result** — Guarda el registro de resultados en un TXT si necesitas ayuda. Es opcional.
 
 Problemas de conexión: Para `unauthorized`, desbloquea el dispositivo, autoriza la depuración y pulsa **Refresh devices**. Para `offline`, reconecta el USB. Si no aparece ningún dispositivo, comprueba la depuración USB, el cable y los controladores USB del fabricante. Si el resultado es parcial, habilita el acceso de uso en los ajustes Android indicados por ResoCat. No se eluden restricciones del fabricante ni políticas de dispositivos administrados.
 

@@ -10,9 +10,9 @@ Set a custom screen resolution for each Android app.
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.1**
+**ResoCat USB Permission Helper 1.0.2**
 
-A free tool to set up ResoCat permissions on an Android phone or tablet connected to a Windows PC by USB. Requires 64-bit Windows 10/11 and .NET Framework 4.5+. ADB is included in the EXE; no separate installation or extraction is needed. The tool uses Korean on Korean Windows and English otherwise. This guide covers all 13 ResoCat languages.
+A free tool to set up ResoCat permissions on an Android phone or tablet connected to a Windows PC by USB. Requires 64-bit Windows 10/11 and .NET Framework 4.5+. ADB is included in the EXE; no separate installation or extraction is needed. The program interface is in English on all Windows systems. This guide covers all 13 ResoCat languages.
 
 [SHA-256](downloads/SHA256SUMS.txt) · [Source code](usb-helper/source/ResoCatAdbHelper.cs)
 
@@ -25,6 +25,12 @@ A free tool to set up ResoCat permissions on an Android phone or tablet connecte
 5. Run `ResoCat-ADB-Helper.exe` downloaded from the official GitHub repository.
 6. Select your device and click **Set permissions and open ResoCat**. A single connected device is selected automatically.
 7. Check the completion message and review the terms and remaining settings in ResoCat yourself. You can then disconnect USB.
+
+### Buttons
+
+- **Refresh devices** — Find devices or refresh the list.
+- **Set permissions and open ResoCat** — Set permissions on the selected device and launch ResoCat. Click this button to run the setup.
+- **Save result** — Save the result log as a TXT file if you need support. This is optional.
 
 Connection issues: For `unauthorized`, unlock the device, allow USB debugging, then click **Refresh devices**. For `offline`, reconnect USB. If no device appears, check USB debugging, the data cable and OEM USB drivers. If the result is partially complete, enable Usage Access in the Android settings indicated by ResoCat. Manufacturer restrictions and managed-device policies are not bypassed.
 
