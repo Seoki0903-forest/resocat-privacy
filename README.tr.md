@@ -31,3 +31,7 @@ Bağlantı sorunları: `unauthorized` için cihazın kilidini açın, USB hata a
 Windows uyarısı: Program dijital olarak imzalanmamıştır; “Windows bilgisayarınızı korudu” uyarısı çıkabilir. Resmî indirme adresini ve SHA-256’yı kontrol edin; yalnızca güvendiğiniz dosya için “Ek bilgi → Yine de çalıştır” seçin.
 
 Değişiklikler: Yalnızca etkin Android kullanıcısının ResoCat’i (`app.resocat.switcher`) için `WRITE_SECURE_SETTINGS` ve `GET_USAGE_STATS` ayarlanır. Root veya bilgisayar yönetici yetkisi gerekmez. Çözünürlük/DPI, reklam, ödeme ve pil ayarları değiştirilmez; uygulama yüklenmez, veri silinmez veya sunucuya gönderilmez. **Save result** ile kaydedilen TXT cihaz kimliklerini içerebilir; gerektiğinde desteğe kendiniz gönderin. Ayarlar bittikten sonra USB hata ayıklamayı kapatabilirsiniz.
+
+## İletişim
+
+[Web sitesi](https://seokiapps.com/) · [Bize ulaşın](https://seokiapps.com/en/support/)

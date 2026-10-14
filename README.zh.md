@@ -31,3 +31,7 @@
 Windows 提示：程序未进行代码签名，可能显示“Windows 已保护你的电脑”。请核对官方下载地址和 SHA-256，仅对可信文件选择“更多信息 → 仍要运行”。
 
 修改范围：仅为当前 Android 用户的 ResoCat（`app.resocat.switcher`）设置 `WRITE_SECURE_SETTINGS` 和 `GET_USAGE_STATS`。不需要 root 或电脑管理员权限，不修改分辨率、DPI、广告、付款或电池设置，不安装应用或删除数据，也不会向服务器发送数据。**Save result** 保存的 TXT 可能包含设备标识；需要帮助时请自行发送给支持人员。设置完成后可关闭 USB 调试。
+
+## 联系
+
+[官方网站](https://seokiapps.com/) · [联系我们](https://seokiapps.com/en/support/)

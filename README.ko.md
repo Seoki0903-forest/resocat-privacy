@@ -31,3 +31,7 @@ Windows PC에서 USB로 연결한 Android 기기의 ResoCat 초기 권한을 설
 Windows 경고: 이 프로그램은 코드 서명되지 않아 SmartScreen의 ‘Windows의 PC 보호’가 표시될 수 있습니다. 공식 다운로드 주소와 SHA-256을 확인하고 신뢰하는 파일에 한해서 ‘추가 정보 → 실행’을 선택하세요.
 
 변경 항목: 현재 Android 사용자의 ResoCat(`app.resocat.switcher`)에 해상도 변경 권한 `WRITE_SECURE_SETTINGS`와 사용정보 접근 `GET_USAGE_STATS`만 설정합니다. 루팅이나 PC 관리자 권한은 필요하지 않습니다. 해상도·DPI 값, 광고·결제, 배터리 설정은 변경하지 않으며 앱을 설치하거나 데이터를 삭제하지 않습니다. 서버로 데이터를 전송하지 않습니다. **결과 저장**을 눌러 저장한 TXT에는 기기 식별자가 포함될 수 있습니다. 문제가 있으면 해당 TXT를 지원 담당자에게 직접 보내세요. USB 디버깅은 설정이 끝난 뒤 꺼도 됩니다.
+
+## 문의
+
+[홈페이지](https://seokiapps.com/) · [문의하기](https://seokiapps.com/en/support/)

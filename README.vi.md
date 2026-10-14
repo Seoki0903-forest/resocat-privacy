@@ -31,3 +31,7 @@ Lỗi kết nối: Với `unauthorized`, mở khóa, cho phép gỡ lỗi USB r�
 Cảnh báo Windows: Chương trình chưa được ký số và có thể hiện “Windows protected your PC”. Kiểm tra địa chỉ tải chính thức và SHA-256; chỉ chọn “More info → Run anyway” nếu bạn tin cậy tệp.
 
 Thay đổi: Chỉ cấp `WRITE_SECURE_SETTINGS` và `GET_USAGE_STATS` cho ResoCat (`app.resocat.switcher`) của người dùng Android hiện tại. Không cần root hay quyền quản trị máy tính. Không đổi độ phân giải/DPI, quảng cáo, thanh toán hoặc pin, không cài ứng dụng, xóa dữ liệu hay gửi dữ liệu đến máy chủ. TXT từ **Save result** có thể chứa mã nhận dạng thiết bị; hãy tự gửi cho bộ phận hỗ trợ khi cần. Có thể tắt gỡ lỗi USB sau khi hoàn tất.
+
+## Liên hệ
+
+[Trang web](https://seokiapps.com/) · [Liên hệ với chúng tôi](https://seokiapps.com/en/support/)

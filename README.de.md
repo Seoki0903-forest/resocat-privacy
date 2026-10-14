@@ -31,3 +31,7 @@ Verbindungsprobleme: Bei `unauthorized` Gerät entsperren, USB-Debugging erlaube
 Windows-Warnung: Das Programm ist nicht digital signiert und kann „Der Computer wurde durch Windows geschützt“ auslösen. Offizielle Download-URL und SHA-256 prüfen; „Weitere Informationen → Trotzdem ausführen“ nur für eine vertrauenswürdige Datei wählen.
 
 Änderungen: Nur `WRITE_SECURE_SETTINGS` und `GET_USAGE_STATS` für ResoCat (`app.resocat.switcher`) beim aktiven Android-Benutzer. Root oder PC-Administratorrechte sind nicht nötig. Auflösung/DPI, Werbung, Zahlungen und Akkueinstellungen bleiben unverändert. Keine App-Installation, Datenlöschung oder Übertragung an Server. Die TXT aus **Save result** kann Gerätekennungen enthalten; sende sie bei Bedarf selbst an den Support. USB-Debugging kann danach deaktiviert werden.
+
+## Kontakt
+
+[Website](https://seokiapps.com/) · [Kontakt aufnehmen](https://seokiapps.com/en/support/)

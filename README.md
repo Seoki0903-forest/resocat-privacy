@@ -31,3 +31,7 @@ Connection issues: For `unauthorized`, unlock the device, allow USB debugging, t
 Windows warning: This program is unsigned and may trigger “Windows protected your PC.” Check the official download URL and SHA-256; choose “More info → Run anyway” only for a file you trust.
 
 Changes: Only `WRITE_SECURE_SETTINGS` and the `GET_USAGE_STATS` AppOp are set for ResoCat (`app.resocat.switcher`) in the active Android user. No root or PC administrator access is required. Resolution/DPI values, ads, billing and battery settings are not changed. No apps are installed or data deleted. No data is sent to a server. **Save result** creates a TXT that may contain device identifiers; send it to support yourself if needed. USB debugging can be disabled after setup.
+
+## Contact
+
+[Website](https://seokiapps.com/) · [Contact us](https://seokiapps.com/en/support/)

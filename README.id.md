@@ -31,3 +31,7 @@ Masalah koneksi: Untuk `unauthorized`, buka kunci perangkat, izinkan debugging U
 Peringatan Windows: Program belum ditandatangani dan dapat menampilkan “Windows protected your PC”. Periksa URL unduhan resmi dan SHA-256; pilih “More info → Run anyway” hanya untuk berkas yang Anda percayai.
 
 Perubahan: Hanya `WRITE_SECURE_SETTINGS` dan `GET_USAGE_STATS` untuk ResoCat (`app.resocat.switcher`) pada pengguna Android aktif. Tidak perlu root atau hak administrator PC. Tidak mengubah nilai resolusi/DPI, iklan, pembayaran atau pengaturan baterai, memasang aplikasi, menghapus data, atau mengirim data ke server. TXT dari **Save result** dapat memuat identitas perangkat; kirim sendiri ke dukungan bila perlu. Debugging USB dapat dimatikan setelah pengaturan selesai.
+
+## Kontak
+
+[Situs web](https://seokiapps.com/) · [Hubungi kami](https://seokiapps.com/en/support/)

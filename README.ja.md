@@ -31,3 +31,7 @@ Windows PC と USB 接続した Android スマートフォン・タブレット�
 Windows の警告：コード署名がないため「Windows によって PC が保護されました」が表示される場合があります。公式のダウンロード元と SHA-256 を確認し、信頼できるファイルに限り「詳細情報 → 実行」を選んでください。
 
 変更内容：現在の Android ユーザーの ResoCat（`app.resocat.switcher`）に `WRITE_SECURE_SETTINGS` と `GET_USAGE_STATS` のみを設定します。root や PC 管理者権限は不要です。解像度・DPI、広告・課金、バッテリー設定は変更せず、アプリのインストールやデータ削除、サーバーへの送信もしません。**Save result** の TXT に端末識別情報が含まれる場合があります。必要なら自分でサポート担当者に送ってください。設定後は USB デバッグを無効にできます。
+
+## お問い合わせ
+
+[公式サイト](https://seokiapps.com/) · [お問い合わせフォーム](https://seokiapps.com/en/support/)

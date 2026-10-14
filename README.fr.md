@@ -31,3 +31,7 @@ Problèmes de connexion : Pour `unauthorized`, déverrouillez l’appareil, auto
 Avertissement Windows : Ce programme n’est pas signé et peut afficher « Windows a protégé votre ordinateur ». Vérifiez l’URL officielle et le SHA-256 ; choisissez « Informations complémentaires → Exécuter quand même » uniquement pour un fichier de confiance.
 
 Modifications : Uniquement `WRITE_SECURE_SETTINGS` et `GET_USAGE_STATS` pour ResoCat (`app.resocat.switcher`) de l’utilisateur Android actif. Aucun root ni droit administrateur du PC requis. Aucun changement de résolution/DPI, publicité, paiement ou batterie ; aucune installation d’application, suppression de données ou transmission à un serveur. Le TXT de **Save result** peut contenir des identifiants de l’appareil ; envoyez-le vous-même au support si nécessaire. Le débogage USB peut être désactivé après la configuration.
+
+## Contact
+
+[Site web](https://seokiapps.com/) · [Nous contacter](https://seokiapps.com/en/support/)

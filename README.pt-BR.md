@@ -31,3 +31,7 @@ Problemas de conexão: Para `unauthorized`, desbloqueie o dispositivo, autorize 
 Aviso do Windows: O programa não tem assinatura digital e pode exibir “O Windows protegeu o computador”. Confira a URL oficial e o SHA-256; escolha “Mais informações → Executar assim mesmo” somente para um arquivo em que você confia.
 
 Alterações: Somente `WRITE_SECURE_SETTINGS` e `GET_USAGE_STATS` do ResoCat (`app.resocat.switcher`) no usuário Android ativo. Não exige root nem administrador do PC. Não muda resolução/DPI, anúncios, pagamentos ou bateria, não instala aplicativos, não apaga dados e não envia dados a servidores. O TXT de **Save result** pode incluir identificadores do dispositivo; envie-o ao suporte por conta própria se necessário. A depuração USB pode ser desativada depois da configuração.
+
+## Contato
+
+[Site](https://seokiapps.com/) · [Fale conosco](https://seokiapps.com/en/support/)
