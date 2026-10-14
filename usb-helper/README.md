@@ -1,5 +1,9 @@
 # ResoCat USB Permission Helper — Windows
 
+[Download and instructions in 13 languages](../README.md)
+
+GitHub distributes the standalone EXE. The ZIP references below describe the optional package produced by the local build script, not a separate download required by users.
+
 ## 한국어
 
 PC에서 ResoCat의 초기 권한을 설정하는 도구입니다. 한국어 Windows에서는 한국어, 그 외에는 영어로 표시됩니다. ResoCat APK나 Shizuku를 설치하지 않으며, 현재 Android 사용자의 ResoCat에 필요한 두 가지 권한만 설정합니다.

@@ -1,3 +1,1 @@
-4580d8d9cf059c3c0cdd8185e547e0b05de5498255bd02cc1b627d21111429a1  ResoCat-ADB-Helper-1.0.1-Windows.zip
 ce1f1d4cb75337090c032823b531ee5956cfd194edff98d2a9a88504ccdb7b28  ResoCat-ADB-Helper.exe
-92455b87e064839a4e2ce560963becb878a0b493ff128b8c4fb66df7f5e6a62c  ResoCat-USB-Helper-Guide.txt
