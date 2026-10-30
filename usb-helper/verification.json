@@ -1,0 +1,19 @@
+{
+  "version": "1.0.3",
+  "date": "2026-10-30",
+  "exeSha256": "87c7cf16e6faa81aabdb27a8493e7b8a4e559b8afd0a6944143dbe04a34623a5",
+  "exeBytes": 32768,
+  "embeddedExecutableResources": 0,
+  "googleToolsVersion": "37.0.1",
+  "googleArchiveSha256": "45f4d63113e895ebde0c90f194099a4676b6ac653bd28d54314a9e022bbc1a99",
+  "defenderSignatureVersion": "1.463.31.0",
+  "defenderBeforeExecution": "No threats found, exit0",
+  "defenderAfterSelfTest": "No threats found, exit0",
+  "antivirusEnabled": true,
+  "realTimeProtectionEnabled": true,
+  "antivirusExclusionsAdded": false,
+  "selfTestsPassed": 26,
+  "guideLanguages": 13,
+  "microsoftOldSampleReview": "Pending submission; not a clean verdict",
+  "smartScreenReputation": "Unsigned; publisher reputation prompts may remain"
+}

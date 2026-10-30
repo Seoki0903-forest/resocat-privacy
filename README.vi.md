@@ -10,9 +10,9 @@
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.2**
+**ResoCat USB Permission Helper 1.0.3**
 
-Công cụ miễn phí để cấp quyền ban đầu cho ResoCat trên điện thoại hoặc máy tính bảng Android kết nối với máy tính Windows qua USB. Yêu cầu Windows 10/11 64-bit và .NET Framework 4.5 trở lên. ADB đã được tích hợp trong EXE; không cần cài đặt riêng hay giải nén. Giao diện chương trình dùng tiếng Anh trên mọi hệ thống Windows. Hướng dẫn có đủ 13 ngôn ngữ của ResoCat.
+Công cụ miễn phí để cấp quyền ban đầu cho ResoCat trên điện thoại hoặc máy tính bảng Android kết nối với máy tính Windows qua USB. Yêu cầu Windows 10/11 64-bit và .NET Framework 4.5 trở lên. Chỉ cần tải một tệp EXE này. Lần đầu cần Internet: chương trình tự tải Android platform-tools 37.0.1 trực tiếp từ máy chủ chính thức của Google và kiểm tra SHA-256 trước khi dùng. Công cụ đã xác minh được lưu tại `%LOCALAPPDATA%\ResoCat\platform-tools-37.0.1` để dùng ngoại tuyến về sau. ADB không còn được nhúng trong EXE hoặc chạy từ thư mục tạm. Giao diện chương trình dùng tiếng Anh trên mọi hệ thống Windows. Hướng dẫn có đủ 13 ngôn ngữ của ResoCat.
 
 [SHA-256](downloads/SHA256SUMS.txt) · [Mã nguồn](usb-helper/source/ResoCatAdbHelper.cs)
 

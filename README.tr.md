@@ -10,9 +10,9 @@ Her Android uygulaması için ayrı ekran çözünürlüğü ayarlayın.
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.2**
+**ResoCat USB Permission Helper 1.0.3**
 
-USB ile Windows bilgisayara bağlanan Android telefon veya tablette ResoCat’in başlangıç izinlerini ayarlayan ücretsiz araç. 64 bit Windows 10/11 ve .NET Framework 4.5+ gerekir. ADB, EXE’ye dahildir; ayrı kurulum veya dosya çıkarma gerekmez. Program arayüzü tüm Windows sistemlerinde İngilizcedir. Bu kılavuz ResoCat’in 13 dilini kapsar.
+USB ile Windows bilgisayara bağlanan Android telefon veya tablette ResoCat’in başlangıç izinlerini ayarlayan ücretsiz araç. 64 bit Windows 10/11 ve .NET Framework 4.5+ gerekir. Yalnızca bu tek EXE dosyasını indirin. İlk kullanımda İnternet gerekir: program Android platform-tools 37.0.1 dosyalarını doğrudan Google’ın resmî sunucusundan otomatik indirir ve kullanmadan önce SHA-256 ile doğrular. Doğrulanan araçlar, daha sonra çevrimdışı kullanım için `%LOCALAPPDATA%\ResoCat\platform-tools-37.0.1` konumunda saklanır. ADB artık EXE içine gömülmez veya geçici klasörden çalıştırılmaz. Program arayüzü tüm Windows sistemlerinde İngilizcedir. Bu kılavuz ResoCat’in 13 dilini kapsar.
 
 [SHA-256](downloads/SHA256SUMS.txt) · [Kaynak kodu](usb-helper/source/ResoCatAdbHelper.cs)
 

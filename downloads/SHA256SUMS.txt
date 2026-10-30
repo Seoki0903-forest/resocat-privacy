@@ -1,1 +1,1 @@
-671b1f8147b8cfb505faae60a822847bdbc2b399168d8706690fd73a0c044840  ResoCat-ADB-Helper.exe
+87c7cf16e6faa81aabdb27a8493e7b8a4e559b8afd0a6944143dbe04a34623a5  ResoCat-ADB-Helper.exe

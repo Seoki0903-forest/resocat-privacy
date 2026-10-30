@@ -10,9 +10,9 @@ Defina uma resolução de tela personalizada para cada aplicativo Android.
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.2**
+**ResoCat USB Permission Helper 1.0.3**
 
-Ferramenta gratuita para configurar as permissões iniciais do ResoCat em um celular ou tablet Android conectado por USB a um PC Windows. Requer Windows 10/11 de 64 bits e .NET Framework 4.5+. O EXE inclui o ADB; não é necessário instalar separadamente nem extrair arquivos. A interface do programa está em inglês em todos os sistemas Windows. Este guia abrange os 13 idiomas do ResoCat.
+Ferramenta gratuita para configurar as permissões iniciais do ResoCat em um celular ou tablet Android conectado por USB a um PC Windows. Requer Windows 10/11 de 64 bits e .NET Framework 4.5+. Basta baixar este único EXE. O primeiro uso requer Internet: o programa baixa automaticamente o Android platform-tools 37.0.1 diretamente do Google e verifica o SHA-256 antes do uso. As ferramentas verificadas ficam em `%LOCALAPPDATA%\ResoCat\platform-tools-37.0.1` para uso posterior sem conexão. O ADB não é mais incorporado ao EXE nem executado de uma pasta temporária. A interface do programa está em inglês em todos os sistemas Windows. Este guia abrange os 13 idiomas do ResoCat.
 
 [SHA-256](downloads/SHA256SUMS.txt) · [Código-fonte](usb-helper/source/ResoCatAdbHelper.cs)
 

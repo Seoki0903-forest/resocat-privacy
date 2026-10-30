@@ -10,9 +10,9 @@ Android アプリごとに好きな画面解像度を設定できます。
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.2**
+**ResoCat USB Permission Helper 1.0.3**
 
-Windows PC と USB 接続した Android スマートフォン・タブレットで、ResoCat の初期権限を設定する無料ツールです。64 ビット版 Windows 10/11 と .NET Framework 4.5 以上が必要です。ADB は EXE に含まれており、別途インストールや解凍は不要です。プログラムの表示はすべての Windows で英語です。このガイドは ResoCat の全 13 対応言語で提供しています。
+Windows PC と USB 接続した Android スマートフォン・タブレットで、ResoCat の初期権限を設定する無料ツールです。64 ビット版 Windows 10/11 と .NET Framework 4.5 以上が必要です。ダウンロードするのは EXE 1個だけです。初回はインターネット接続が必要です。Google 公式サーバーから Android platform-tools 37.0.1 を自動取得し、使用前に SHA-256 を検証します。検証済みのツールは `%LOCALAPPDATA%\ResoCat\platform-tools-37.0.1` に保存され、次回からオフラインでも使用できます。ADB の EXE への埋め込みと一時フォルダーからの実行を廃止しました。プログラムの表示はすべての Windows で英語です。このガイドは ResoCat の全 13 対応言語で提供しています。
 
 [SHA-256](downloads/SHA256SUMS.txt) · [ソースコード](usb-helper/source/ResoCatAdbHelper.cs)
 

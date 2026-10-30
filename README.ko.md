@@ -10,9 +10,9 @@ Android 앱별로 원하는 화면 해상도를 설정하세요.
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.2**
+**ResoCat USB Permission Helper 1.0.3**
 
-Windows PC에서 USB로 연결한 Android 기기의 ResoCat 초기 권한을 설정하는 무료 도구입니다. 64비트 Windows 10/11과 .NET Framework 4.5 이상이 필요합니다. ADB가 EXE에 포함되어 있어 별도 설치나 압축 해제가 필요하지 않습니다. 프로그램 화면은 모든 Windows에서 영어로 표시됩니다. 이 안내문은 ResoCat의 13개 지원 언어로 제공됩니다.
+Windows PC에서 USB로 연결한 Android 기기의 ResoCat 초기 권한을 설정하는 무료 도구입니다. 64비트 Windows 10/11과 .NET Framework 4.5 이상이 필요합니다. EXE 하나만 받으면 됩니다. 첫 실행에는 인터넷 연결이 필요하며, Google 공식 서버에서 Android platform-tools 37.0.1을 자동으로 내려받고 사용 전에 SHA-256을 검증합니다. 검증된 도구는 `%LOCALAPPDATA%\ResoCat\platform-tools-37.0.1`에 보관하여 이후 오프라인에서도 사용합니다. EXE에 ADB를 내장하거나 임시 폴더에서 실행하는 구조를 제거했습니다. 프로그램 화면은 모든 Windows에서 영어로 표시됩니다. 이 안내문은 ResoCat의 13개 지원 언어로 제공됩니다.
 
 [SHA-256](downloads/SHA256SUMS.txt) · [소스 코드](usb-helper/source/ResoCatAdbHelper.cs)
 

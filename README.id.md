@@ -10,9 +10,9 @@ Atur resolusi layar khusus untuk setiap aplikasi Android.
 
 [![Windows Download EXE](https://img.shields.io/badge/Windows-Download_EXE-6b4ca5?style=for-the-badge&labelColor=555555)](https://github.com/Seoki0903-forest/resocat-privacy/raw/refs/heads/main/downloads/ResoCat-ADB-Helper.exe)
 
-**ResoCat USB Permission Helper 1.0.2**
+**ResoCat USB Permission Helper 1.0.3**
 
-Alat gratis untuk mengatur izin awal ResoCat pada ponsel atau tablet Android melalui USB dari PC Windows. Memerlukan Windows 10/11 64-bit dan .NET Framework 4.5+. ADB sudah ada di EXE; tidak perlu instalasi terpisah atau ekstraksi. Antarmuka program menggunakan bahasa Inggris pada semua sistem Windows. Panduan ini tersedia dalam 13 bahasa ResoCat.
+Alat gratis untuk mengatur izin awal ResoCat pada ponsel atau tablet Android melalui USB dari PC Windows. Memerlukan Windows 10/11 64-bit dan .NET Framework 4.5+. Cukup unduh satu EXE ini. Penggunaan pertama memerlukan Internet: program mengunduh Android platform-tools 37.0.1 langsung dari server resmi Google dan memverifikasi SHA-256 sebelum digunakan. Alat yang telah diverifikasi disimpan di `%LOCALAPPDATA%\ResoCat\platform-tools-37.0.1` untuk penggunaan luring berikutnya. ADB tidak lagi disematkan dalam EXE atau dijalankan dari folder sementara. Antarmuka program menggunakan bahasa Inggris pada semua sistem Windows. Panduan ini tersedia dalam 13 bahasa ResoCat.
 
 [SHA-256](downloads/SHA256SUMS.txt) · [Kode sumber](usb-helper/source/ResoCatAdbHelper.cs)
 
