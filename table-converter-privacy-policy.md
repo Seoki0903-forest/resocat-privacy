@@ -7,7 +7,7 @@
 
 ## English · Table converter · Privacy policy
 
-Effective date: 2026-11-07
+Effective date: 2026-11-09
 
 This policy covers the Seoki Apps Table Converter: pasted tables, file and PDF import, web table extraction, on-device translation, visitor statistics and error reports. General website pages, the support board and other apps have separate privacy information. Send privacy questions and rights requests to contact@seokiapps.com.
 
@@ -49,9 +49,9 @@ We do not sell document contents or share them for advertising. Sharing outside 
 
 ### Advertising and personalization choices
 
-Live advertising is currently disabled on this website. The AdSense verification meta tag and ads.txt provide site verification information and do not load ads by themselves. This notice and required consent arrangements will be applied before advertising is enabled.
+Some pages may show ads through Google AdSense. Ads are displayed separately from the table editor. When required, users can make advertising and cookie choices in the consent message.
 
-If Google advertising is introduced, third-party vendors including Google may use advertising cookies to serve ads based on earlier visits to this or other sites. Google and its partners may use those cookies for personalized ads. Manage personalization through Google’s advertising settings or the industry choice page linked below. Table contents are not supplied for advertising.
+Third-party vendors including Google may use advertising cookies to serve ads based on earlier visits to this or other sites. Google and its partners may use those cookies for personalized ads. Manage personalization through Google’s advertising settings or the industry choice page linked below. Table contents are not supplied for advertising.
 
 ### Your rights, safeguards and policy changes
 
@@ -63,7 +63,7 @@ We use administrator access controls, HTTPS, and password hashing/encryption. Re
 
 - [Cloudflare](https://www.cloudflare.com/privacypolicy/)
 - [Brevo](https://www.brevo.com/legal/privacypolicy/)
-- [Google](https://policies.google.com/technologies/ads)
+- [Google](https://policies.google.com/technologies/partner-sites)
 - [Google My Ad Center](https://myadcenter.google.com/)
 - [AdChoices](https://optout.aboutads.info/)
 - [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
@@ -77,7 +77,7 @@ Privacy contact: [contact@seokiapps.com](mailto:contact@seokiapps.com)
 
 ## 한국어 · 표 변환기 · 개인정보처리방침
 
-시행일: 2026-11-07
+시행일: 2026-11-09
 
 이 방침은 Seoki Apps 표 변환기의 표 붙여넣기, 파일·PDF 가져오기, 웹 표 추출, 기기 내 번역, 방문 통계와 오류 보고에 적용됩니다. 홈페이지의 일반 페이지·고객센터와 다른 앱에는 별도 방침이 적용됩니다. 개인정보 관련 문의와 권리 요청은 contact@seokiapps.com으로 보내 주세요.
 
@@ -119,9 +119,9 @@ Cloudflare는 페이지 전달·보안·API와 데이터베이스를 제공하�
 
 ### 광고와 맞춤 광고 선택
 
-현재 이 웹사이트의 실광고는 비활성입니다. 애드센스 인증 메타 태그와 ads.txt는 사이트 확인 정보이며 그 자체로 광고를 불러오지 않습니다. 실제 광고를 활성화하기 전에 이 안내와 필요한 동의 절차를 적용합니다.
+일부 페이지에 Google AdSense 광고가 표시될 수 있습니다. 광고는 표 편집 영역과 분리해 표시합니다. 필요한 지역에서는 동의 메시지에서 광고와 쿠키 설정을 선택할 수 있습니다.
 
-Google 광고를 도입하면 Google을 포함한 제3자 업체가 이 사이트나 다른 사이트의 이전 방문을 바탕으로 광고 쿠키를 사용하고 광고를 게재할 수 있습니다. Google과 파트너의 광고 쿠키는 맞춤 광고에 사용될 수 있으며, 아래 Google 광고 설정 또는 업계 광고 선택 페이지에서 맞춤 광고를 관리할 수 있습니다. 표 내용은 광고에 제공하지 않습니다.
+Google을 포함한 제3자 업체가 이 사이트나 다른 사이트의 이전 방문을 바탕으로 광고 쿠키를 사용하고 광고를 게재할 수 있습니다. Google과 파트너의 광고 쿠키는 맞춤 광고에 사용될 수 있으며, 아래 Google 광고 설정 또는 업계 광고 선택 페이지에서 맞춤 광고를 관리할 수 있습니다. 표 내용은 광고에 제공하지 않습니다.
 
 ### 이용자 권리·보호와 방침 변경
 
@@ -133,7 +133,7 @@ Google 광고를 도입하면 Google을 포함한 제3자 업체가 이 사이�
 
 - [Cloudflare](https://www.cloudflare.com/privacypolicy/)
 - [Brevo](https://www.brevo.com/legal/privacypolicy/)
-- [Google](https://policies.google.com/technologies/ads)
+- [Google](https://policies.google.com/technologies/partner-sites)
 - [Google My Ad Center](https://myadcenter.google.com/)
 - [AdChoices](https://optout.aboutads.info/)
 - [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
@@ -147,7 +147,7 @@ Google 광고를 도입하면 Google을 포함한 제3자 업체가 이 사이�
 
 ## Español · Conversor de tablas · Política de privacidad
 
-Fecha de entrada en vigor: 2026-11-07
+Fecha de entrada en vigor: 2026-11-09
 
 Esta política cubre el Conversor de tablas de Seoki Apps: tablas pegadas, importación de archivos y PDF, extracción de tablas web, traducción en el dispositivo, estadísticas e informes de errores. Las páginas generales, el foro de soporte y otras aplicaciones tienen políticas independientes. Para consultas y solicitudes sobre privacidad, escriba a contact@seokiapps.com.
 
@@ -189,9 +189,9 @@ No vendemos documentos ni los compartimos para publicidad. El tratamiento fuera 
 
 ### Publicidad y personalización
 
-Los anuncios reales están desactivados. La etiqueta de verificación de AdSense y ads.txt no cargan anuncios por sí mismos. Antes de activarlos se aplicarán este aviso y los mecanismos de consentimiento necesarios.
+Algunas páginas pueden mostrar anuncios de Google AdSense, separados del editor de tablas. Cuando sea necesario, el aviso de consentimiento permite elegir las opciones de publicidad y cookies.
 
-Si se incorpora publicidad de Google, proveedores como Google podrán utilizar cookies publicitarias según visitas anteriores a este u otros sitios. Google y sus socios pueden usarlas para personalizar anuncios. Gestiona tus preferencias en los ajustes de publicidad de Google o la página de elección del sector enlazados. El contenido de las tablas no se proporciona para anuncios.
+Proveedores como Google podrán utilizar cookies publicitarias según visitas anteriores a este u otros sitios. Google y sus socios pueden usarlas para personalizar anuncios. Gestiona tus preferencias en los ajustes de publicidad de Google o la página de elección del sector enlazados. El contenido de las tablas no se proporciona para anuncios.
 
 ### Derechos, protección y cambios
 
@@ -203,7 +203,7 @@ Usamos acceso administrativo restringido, HTTPS y hashes/cifrado de contraseñas
 
 - [Cloudflare](https://www.cloudflare.com/privacypolicy/)
 - [Brevo](https://www.brevo.com/legal/privacypolicy/)
-- [Google](https://policies.google.com/technologies/ads)
+- [Google](https://policies.google.com/technologies/partner-sites)
 - [Google My Ad Center](https://myadcenter.google.com/)
 - [AdChoices](https://optout.aboutads.info/)
 - [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
@@ -217,7 +217,7 @@ Contacto de privacidad: [contact@seokiapps.com](mailto:contact@seokiapps.com)
 
 ## Português (Brasil) · Conversor de tabelas · Política de privacidade
 
-Vigência: 2026-11-07
+Vigência: 2026-11-09
 
 Esta política abrange o Conversor de tabelas da Seoki Apps: tabelas coladas, importação de arquivos e PDF, extração de tabelas da web, tradução no dispositivo, estatísticas e relatos de erros. Páginas gerais, o atendimento e outros aplicativos têm políticas separadas. Envie dúvidas e solicitações de privacidade para contact@seokiapps.com.
 
@@ -259,9 +259,9 @@ Não vendemos documentos nem os fornecemos para anúncios. O compartilhamento fo
 
 ### Anúncios e personalização
 
-Anúncios reais estão desativados. A meta tag de verificação do AdSense e o ads.txt não carregam anúncios por si só. Antes da ativação, serão aplicados este aviso e os mecanismos de consentimento necessários.
+Algumas páginas podem exibir anúncios do Google AdSense, separados do editor de tabelas. Quando necessário, a mensagem de consentimento permite escolher as opções de publicidade e cookies.
 
-Se forem introduzidos anúncios do Google, terceiros, incluindo o Google, poderão usar cookies publicitários com base em visitas anteriores a este ou outros sites. Google e parceiros podem usá-los para personalização. Gerencie suas escolhas nas configurações de anúncios do Google ou na página de opções do setor abaixo. O conteúdo das tabelas não é fornecido para publicidade.
+Terceiros, incluindo o Google, poderão usar cookies publicitários com base em visitas anteriores a este ou outros sites. Google e parceiros podem usá-los para personalização. Gerencie suas escolhas nas configurações de anúncios do Google ou na página de opções do setor abaixo. O conteúdo das tabelas não é fornecido para publicidade.
 
 ### Direitos, segurança e alterações
 
@@ -273,7 +273,7 @@ Usamos controle de acesso administrativo, HTTPS e hash/criptografia de senhas. R
 
 - [Cloudflare](https://www.cloudflare.com/privacypolicy/)
 - [Brevo](https://www.brevo.com/legal/privacypolicy/)
-- [Google](https://policies.google.com/technologies/ads)
+- [Google](https://policies.google.com/technologies/partner-sites)
 - [Google My Ad Center](https://myadcenter.google.com/)
 - [AdChoices](https://optout.aboutads.info/)
 - [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
@@ -287,7 +287,7 @@ Contato de privacidade: [contact@seokiapps.com](mailto:contact@seokiapps.com)
 
 ## 简体中文 · 表格转换器 · 隐私政策
 
-生效日期: 2026-11-07
+生效日期: 2026-11-09
 
 本政策适用于 Seoki Apps 表格转换器的表格粘贴、文件及 PDF 导入、网页表格提取、设备端翻译、访问统计和错误报告。一般网页、客户支持板块和其他应用适用独立隐私政策。隐私问题和权利请求请发送至 contact@seokiapps.com。
 
@@ -329,9 +329,9 @@ Cloudflare 提供网页分发、安全、API 和数据库，可能处理 IP、�
 
 ### 广告与个性化选择
 
-当前实际广告已禁用。AdSense 验证元标签和 ads.txt 自身不会加载广告。启用广告前将落实本说明和必要的同意机制。
+部分页面可能展示 Google AdSense 广告，广告与表格编辑区分开显示。需要征求同意时，您可以在同意提示中选择广告和 Cookie 设置。
 
-若引入 Google 广告，包括 Google 在内的第三方可能使用广告 Cookie，根据您此前对本站及其他网站的访问投放广告。Google 及合作伙伴可能据此提供个性化广告。可通过下方 Google 广告设置或行业选择页面管理个性化。表格内容不会提供给广告。
+包括 Google 在内的第三方可能使用广告 Cookie，根据您此前对本站及其他网站的访问投放广告。Google 及合作伙伴可能据此提供个性化广告。可通过下方 Google 广告设置或行业选择页面管理个性化。表格内容不会提供给广告。
 
 ### 您的权利、安全与变更
 
@@ -343,7 +343,7 @@ Cloudflare 提供网页分发、安全、API 和数据库，可能处理 IP、�
 
 - [Cloudflare](https://www.cloudflare.com/privacypolicy/)
 - [Brevo](https://www.brevo.com/legal/privacypolicy/)
-- [Google](https://policies.google.com/technologies/ads)
+- [Google](https://policies.google.com/technologies/partner-sites)
 - [Google My Ad Center](https://myadcenter.google.com/)
 - [AdChoices](https://optout.aboutads.info/)
 - [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
@@ -357,7 +357,7 @@ Cloudflare 提供网页分发、安全、API 和数据库，可能处理 IP、�
 
 ## हिन्दी · तालिका कन्वर्टर · गोपनीयता नीति
 
-लागू होने की तारीख: 2026-11-07
+लागू होने की तारीख: 2026-11-09
 
 यह नीति Seoki Apps तालिका कनवर्टर में तालिका पेस्ट करने, फ़ाइल और PDF आयात, वेब तालिका निष्कर्षण, डिवाइस पर अनुवाद, विज़िटर आँकड़ों और त्रुटि रिपोर्टों पर लागू होती है। सामान्य वेबपृष्ठों, सहायता बोर्ड और अन्य ऐप की अलग नीतियाँ हैं। गोपनीयता संबंधी प्रश्न और अधिकार अनुरोध contact@seokiapps.com पर भेजें।
 
@@ -399,9 +399,9 @@ Cloudflare पेज, सुरक्षा, API और डेटाबेस �
 
 ### विज्ञापन और निजीकरण
 
-असली विज्ञापन अभी बंद हैं। AdSense सत्यापन मेटा टैग और ads.txt अपने आप विज्ञापन नहीं लाते। चालू करने से पहले यह सूचना और ज़रूरी सहमति प्रक्रिया लागू की जाएगी।
+कुछ पेज Google AdSense के विज्ञापन दिखा सकते हैं। विज्ञापन तालिका संपादक से अलग दिखाए जाते हैं। जहाँ ज़रूरी हो, सहमति संदेश में विज्ञापन और कुकी के विकल्प चुने जा सकते हैं।
 
-Google विज्ञापन आने पर Google समेत तीसरे पक्ष इस या दूसरी साइटों की पुरानी विज़िट के आधार पर विज्ञापन कुकी इस्तेमाल कर सकते हैं। Google और भागीदार इनसे वैयक्तिक विज्ञापन दे सकते हैं। नीचे Google विज्ञापन सेटिंग या उद्योग विकल्प पेज पर चुनाव बदलें। तालिका की सामग्री विज्ञापन के लिए नहीं दी जाती।
+Google समेत तीसरे पक्ष इस या दूसरी साइटों की पुरानी विज़िट के आधार पर विज्ञापन कुकी इस्तेमाल कर सकते हैं। Google और भागीदार इनसे वैयक्तिक विज्ञापन दे सकते हैं। नीचे Google विज्ञापन सेटिंग या उद्योग विकल्प पेज पर चुनाव बदलें। तालिका की सामग्री विज्ञापन के लिए नहीं दी जाती।
 
 ### अधिकार, सुरक्षा और बदलाव
 
@@ -413,7 +413,7 @@ Google विज्ञापन आने पर Google समेत तीस�
 
 - [Cloudflare](https://www.cloudflare.com/privacypolicy/)
 - [Brevo](https://www.brevo.com/legal/privacypolicy/)
-- [Google](https://policies.google.com/technologies/ads)
+- [Google](https://policies.google.com/technologies/partner-sites)
 - [Google My Ad Center](https://myadcenter.google.com/)
 - [AdChoices](https://optout.aboutads.info/)
 - [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
@@ -427,7 +427,7 @@ Google विज्ञापन आने पर Google समेत तीस�
 
 ## العربية · محوّل جداول · سياسة الخصوصية
 
-تاريخ السريان: 2026-11-07
+تاريخ السريان: 2026-11-09
 
 تنطبق هذه السياسة على محوّل الجداول من Seoki Apps: لصق الجداول واستيراد الملفات وPDF واستخراج جداول الويب والترجمة على الجهاز وإحصاءات الزيارة وتقارير الأخطاء. للصفحات العامة ولوحة الدعم والتطبيقات الأخرى سياسات مستقلة. أرسل أسئلة الخصوصية وطلبات الحقوق إلى contact@seokiapps.com.
 
@@ -469,9 +469,9 @@ Google विज्ञापन आने पर Google समेत तीस�
 
 ### الإعلانات والتخصيص
 
-الإعلانات الفعلية معطلة حاليًا. لا تحمّل علامة تحقق AdSense وads.txt إعلانات بذاتهما. ستُطبق هذه المعلومات وترتيبات الموافقة اللازمة قبل التفعيل.
+قد تعرض بعض الصفحات إعلانات Google AdSense في مساحات منفصلة عن محرر الجداول. عند الحاجة، يمكن اختيار إعدادات الإعلانات وملفات تعريف الارتباط من رسالة الموافقة.
 
-إذا أُدخلت إعلانات Google، فقد تستخدم جهات خارجية بما فيها Google ملفات ارتباط إعلانية بناءً على زيارات سابقة لهذا الموقع أو غيره. قد تستخدمها Google وشركاؤها لتخصيص الإعلانات. أدر اختياراتك من إعدادات Google أو صفحة خيارات القطاع أدناه. لا يُقدم محتوى الجداول للإعلانات.
+قد تستخدم جهات خارجية بما فيها Google ملفات ارتباط إعلانية بناءً على زيارات سابقة لهذا الموقع أو غيره. قد تستخدمها Google وشركاؤها لتخصيص الإعلانات. أدر اختياراتك من إعدادات Google أو صفحة خيارات القطاع أدناه. لا يُقدم محتوى الجداول للإعلانات.
 
 ### الحقوق والحماية والتغييرات
 
@@ -483,7 +483,7 @@ Google विज्ञापन आने पर Google समेत तीस�
 
 - [Cloudflare](https://www.cloudflare.com/privacypolicy/)
 - [Brevo](https://www.brevo.com/legal/privacypolicy/)
-- [Google](https://policies.google.com/technologies/ads)
+- [Google](https://policies.google.com/technologies/partner-sites)
 - [Google My Ad Center](https://myadcenter.google.com/)
 - [AdChoices](https://optout.aboutads.info/)
 - [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
@@ -497,7 +497,7 @@ Google विज्ञापन आने पर Google समेत तीस�
 
 ## Français · Convertisseur de tableaux · Politique de confidentialité
 
-Date d’effet: 2026-11-07
+Date d’effet: 2026-11-09
 
 Cette politique couvre le Convertisseur de tableaux de Seoki Apps : tableaux collés, importation de fichiers et PDF, extraction de tableaux web, traduction sur l’appareil, statistiques et rapports d’erreur. Les pages générales, le forum de support et les autres applications ont des politiques distinctes. Adressez vos questions et demandes relatives à la confidentialité à contact@seokiapps.com.
 
@@ -539,9 +539,9 @@ Nous ne vendons pas les documents ni ne les transmettons à des fins publicitair
 
 ### Publicité et personnalisation
 
-La publicité réelle est désactivée. La balise de vérification AdSense et ads.txt ne chargent pas de publicité par eux-mêmes. Cette information et les mécanismes de consentement nécessaires seront appliqués avant toute activation.
+Certaines pages peuvent afficher des annonces Google AdSense à l’écart de l’éditeur de tableaux. Lorsque c’est nécessaire, le message de consentement permet de choisir les options de publicité et de cookies.
 
-Si la publicité Google est introduite, des tiers dont Google pourront utiliser des cookies publicitaires fondés sur les visites antérieures de ce site ou d’autres sites. Google et ses partenaires peuvent les utiliser pour personnaliser les annonces. Gérez vos choix via les paramètres Google ou la page de choix du secteur ci-dessous. Le contenu des tableaux n’est pas fourni pour la publicité.
+Des tiers dont Google pourront utiliser des cookies publicitaires fondés sur les visites antérieures de ce site ou d’autres sites. Google et ses partenaires peuvent les utiliser pour personnaliser les annonces. Gérez vos choix via les paramètres Google ou la page de choix du secteur ci-dessous. Le contenu des tableaux n’est pas fourni pour la publicité.
 
 ### Droits, protection et changements
 
@@ -553,7 +553,7 @@ Nous utilisons contrôles d’accès administratifs, HTTPS et empreintes/chiffre
 
 - [Cloudflare](https://www.cloudflare.com/privacypolicy/)
 - [Brevo](https://www.brevo.com/legal/privacypolicy/)
-- [Google](https://policies.google.com/technologies/ads)
+- [Google](https://policies.google.com/technologies/partner-sites)
 - [Google My Ad Center](https://myadcenter.google.com/)
 - [AdChoices](https://optout.aboutads.info/)
 - [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
@@ -567,7 +567,7 @@ Contact confidentialité: [contact@seokiapps.com](mailto:contact@seokiapps.com)
 
 ## 日本語 · 表変換ツール · プライバシーポリシー
 
-施行日: 2026-11-07
+施行日: 2026-11-09
 
 本方針はSeoki Appsの表変換ツールにおける表の貼り付け、ファイル・PDFの取り込み、ウェブ表の抽出、端末内翻訳、訪問統計、エラー報告に適用されます。一般のウェブページ、お問い合わせ掲示板、他のアプリには別の方針が適用されます。プライバシーの質問や権利に関する請求はcontact@seokiapps.comへお送りください。
 
@@ -609,9 +609,9 @@ Cloudflareは配信・安全対策・API・データベースを提供し、IP�
 
 ### 広告とパーソナライズ
 
-実広告は現在無効です。AdSense認証メタタグとads.txtだけで広告を読み込むことはありません。広告を有効にする前に本案内と必要な同意手続きを適用します。
+一部のページでは、表の編集領域と分けて Google AdSense の広告を表示することがあります。同意が必要な場合は、同意メッセージで広告や Cookie の設定を選べます。
 
-Google広告を導入すると、Googleを含む第三者が当サイトや他サイトへの過去の訪問に基づき広告Cookieを使用できます。Googleとパートナーはパーソナライズ広告に使う場合があります。下のGoogle広告設定や業界の選択ページから管理できます。表の内容は広告に提供しません。
+Google を含む第三者が当サイトや他サイトへの過去の訪問に基づき広告Cookieを使用できます。Googleとパートナーはパーソナライズ広告に使う場合があります。下のGoogle広告設定や業界の選択ページから管理できます。表の内容は広告に提供しません。
 
 ### 権利、安全対策と変更
 
@@ -623,7 +623,7 @@ Google広告を導入すると、Googleを含む第三者が当サイトや他�
 
 - [Cloudflare](https://www.cloudflare.com/privacypolicy/)
 - [Brevo](https://www.brevo.com/legal/privacypolicy/)
-- [Google](https://policies.google.com/technologies/ads)
+- [Google](https://policies.google.com/technologies/partner-sites)
 - [Google My Ad Center](https://myadcenter.google.com/)
 - [AdChoices](https://optout.aboutads.info/)
 - [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
@@ -637,7 +637,7 @@ Google広告を導入すると、Googleを含む第三者が当サイトや他�
 
 ## Bahasa Indonesia · Konverter tabel · Kebijakan privasi
 
-Tanggal berlaku: 2026-11-07
+Tanggal berlaku: 2026-11-09
 
 Kebijakan ini mencakup Konverter Tabel Seoki Apps: penempelan tabel, impor berkas dan PDF, ekstraksi tabel web, terjemahan di perangkat, statistik kunjungan, dan laporan kesalahan. Halaman umum, papan dukungan, dan aplikasi lain memiliki kebijakan terpisah. Kirim pertanyaan dan permintaan hak privasi ke contact@seokiapps.com.
 
@@ -679,9 +679,9 @@ Kami tidak menjual dokumen atau membagikannya untuk iklan. Pemrosesan di luar tu
 
 ### Iklan dan personalisasi
 
-Iklan nyata saat ini dinonaktifkan. Meta verifikasi AdSense dan ads.txt tidak memuat iklan dengan sendirinya. Pemberitahuan ini dan mekanisme persetujuan yang diperlukan akan diterapkan sebelum iklan aktif.
+Beberapa halaman dapat menampilkan iklan Google AdSense secara terpisah dari editor tabel. Jika diperlukan, pilihan iklan dan cookie tersedia dalam pesan persetujuan.
 
-Jika iklan Google diperkenalkan, pihak ketiga termasuk Google dapat memakai cookie iklan berdasarkan kunjungan sebelumnya ke situs ini atau situs lain. Google dan mitra dapat menggunakannya untuk personalisasi. Atur melalui pengaturan iklan Google atau halaman pilihan industri di bawah. Isi tabel tidak diberikan untuk iklan.
+Pihak ketiga termasuk Google dapat memakai cookie iklan berdasarkan kunjungan sebelumnya ke situs ini atau situs lain. Google dan mitra dapat menggunakannya untuk personalisasi. Atur melalui pengaturan iklan Google atau halaman pilihan industri di bawah. Isi tabel tidak diberikan untuk iklan.
 
 ### Hak, perlindungan, dan perubahan
 
@@ -693,7 +693,7 @@ Kami memakai pembatasan akses administrator, HTTPS, dan hash/enkripsi kata sandi
 
 - [Cloudflare](https://www.cloudflare.com/privacypolicy/)
 - [Brevo](https://www.brevo.com/legal/privacypolicy/)
-- [Google](https://policies.google.com/technologies/ads)
+- [Google](https://policies.google.com/technologies/partner-sites)
 - [Google My Ad Center](https://myadcenter.google.com/)
 - [AdChoices](https://optout.aboutads.info/)
 - [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
