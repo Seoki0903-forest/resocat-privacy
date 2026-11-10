@@ -23,6 +23,8 @@ Imported Word, HWP, Excel, CSV and other supported files, including pictures in 
 
 Using Import web tables sends the public webpage URL you enter to our server so it can temporarily read that page. Login credentials and cookies are not sent to the destination site. A temporary IP hash in server memory limits requests; raw IPs are not stored in that list.
 
+OCR for photos and scanned PDFs runs in your browser. If the language model is missing, your browser downloads it from GitHub and may cache it locally. The request downloads model data only. It does not include your file, its images or recognized text.
+
 ### Visitor statistics and exclusion
 
 Regular pages and web tools store a random browser ID and the last counted date in localStorage to avoid duplicate visits. Per-tool date keys use seoki-tool-day:\<tool\>. The server stores a SHA-256 hash of the ID, the date and an allowlisted tool identifier to calculate site-wide and per-tool daily, weekly and monthly visitors. Tool counts combine all interface languages and do not count refreshes twice. The statistics API does not store names, emails, raw IPs, visited URLs, table content or screen images. Hashed identifiers are not considered fully anonymous. Country statistics also store the connection country code supplied by Cloudflare with the identifier hash and date. Raw IPs, cities and precise locations are not stored in these statistics; VPNs may affect the country estimate. The browser also stores the last country-counting dates for the site and tools.
@@ -92,6 +94,8 @@ Privacy contact: [contact@seokiapps.com](mailto:contact@seokiapps.com)
 Word·한글·엑셀·CSV 등의 가져온 파일과 표 안의 그림·사진도 브라우저 안에서 처리합니다. 변환한 표의 복사와 파일 다운로드는 사용자가 실행하며, 작업 문서를 자동으로 서버에 보관하지 않습니다.
 
 ‘웹 표 가져오기’를 실행하면 입력한 공개 웹페이지 주소를 서버로 보내 해당 페이지를 임시로 읽습니다. 대상 사이트에 로그인 정보나 쿠키를 전달하지 않습니다. 요청 제한을 위해 IP의 임시 해시를 서버 메모리에서 사용하며 이 목록에 원본 IP를 저장하지 않습니다.
+
+사진과 스캔 PDF의 문자 인식(OCR)은 브라우저에서 처리합니다. 필요한 언어 모델이 없으면 브라우저가 GitHub에서 내려받아 기기에 캐시할 수 있습니다. 이 요청에는 파일, 이미지, 인식된 텍스트가 포함되지 않습니다.
 
 ### 방문 통계와 수집 제외
 
@@ -163,6 +167,8 @@ Los archivos Word, HWP, Excel, CSV y otros formatos admitidos, incluidas las im�
 
 Importar tablas web envía la URL pública introducida al servidor para leer temporalmente esa página. No se envían credenciales ni cookies al sitio de destino. Un hash temporal de la IP en la memoria del servidor limita las solicitudes; esa lista no almacena la IP original.
 
+El reconocimiento óptico de caracteres (OCR) de fotos y PDF escaneados se ejecuta en el navegador. Si falta el modelo de idioma, el navegador lo descarga de GitHub y puede guardarlo en la caché local. La solicitud no incluye el archivo, sus imágenes ni el texto reconocido.
+
 ### Estadísticas y exclusión
 
 Las páginas generales y herramientas web guardan un identificador aleatorio del navegador y la última fecha contabilizada en localStorage para evitar duplicados. Las claves de fecha por herramienta usan seoki-tool-day:\<tool\>. El servidor guarda un hash SHA-256 del identificador, la fecha y un identificador de herramienta permitido para calcular visitantes diarios, semanales y mensuales del sitio y de cada herramienta. Se suman todos los idiomas y las recargas no duplican el recuento. La API no guarda nombres, correos, IP sin procesar, URL visitadas, contenido de tablas ni imágenes de pantalla. Los identificadores con hash no se consideran totalmente anónimos. Las estadísticas por país también guardan el código de país de conexión proporcionado por Cloudflare junto con el hash y la fecha. No se guardan IP sin procesar, ciudades ni ubicaciones precisas; una VPN puede alterar la estimación. El navegador guarda también las últimas fechas del recuento por país del sitio y las herramientas.
@@ -232,6 +238,8 @@ A tradução compatível usa modelos no dispositivo. Downloads necessários exig
 Arquivos Word, HWP, Excel, CSV e outros formatos compatíveis, incluindo imagens nas tabelas, são processados no navegador. Copiar tabelas e baixar arquivos são ações do usuário; documentos de trabalho não são armazenados automaticamente em nosso servidor.
 
 Importar tabelas da web envia a URL pública informada ao servidor para ler temporariamente a página. Credenciais e cookies não são enviados ao site de destino. Um hash temporário do IP na memória do servidor limita as solicitações; essa lista não armazena o IP original.
+
+O reconhecimento óptico de caracteres (OCR) de fotos e PDFs digitalizados é feito no navegador. Se o modelo de idioma estiver ausente, o navegador o baixa do GitHub e pode armazená-lo em cache no dispositivo. A solicitação não inclui o arquivo, suas imagens nem o texto reconhecido.
 
 ### Estatísticas e exclusão
 
@@ -303,6 +311,8 @@ Contato de privacidade: [contact@seokiapps.com](mailto:contact@seokiapps.com)
 
 使用“导入网页表格”会将输入的公开网页地址发送到服务器，以临时读取该网页。不会向目标网站发送登录凭据或 Cookie。服务器内存中的临时 IP 哈希用于限制请求；该列表不保存原始 IP。
 
+照片和扫描版 PDF 的光学字符识别（OCR）在浏览器中运行。如果缺少语言模型，浏览器会从 GitHub 下载模型，并可将其缓存在设备上。该请求不包含您的文件、图像或识别出的文字。
+
 ### 访问统计与退出
 
 普通页面和网页工具会在 localStorage 中保存随机浏览器标识符和最后统计日期，避免重复计算。各工具的日期键使用 seoki-tool-day:\<tool\>。服务器保存标识符的 SHA-256 哈希、日期和允许列表中的工具标识，计算全站及各工具的每日、每周和每月访客数。各工具合并所有界面语言的数据，刷新不会重复计数。统计 API 不保存姓名、邮箱、原始 IP、访问 URL、表格内容或屏幕图像。哈希标识符不被视为完全匿名的信息。 国家统计还会将 Cloudflare 提供的连接国家代码与标识符哈希和日期一起保存。这些统计不保存原始 IP、城市或精确位置；VPN 等可能影响国家估算。浏览器还会保存网站及各工具最后进行国家统计的日期。
@@ -372,6 +382,8 @@ Cloudflare 提供网页分发、安全、API 和数据库，可能处理 IP、�
 Word, HWP, Excel, CSV और अन्य समर्थित फ़ाइलें तथा तालिकाओं के चित्र ब्राउज़र में संसाधित होते हैं। परिवर्तित तालिका कॉपी करना और फ़ाइल डाउनलोड करना उपयोगकर्ता की कार्रवाई है; कार्यरत दस्तावेज़ हमारे सर्वर पर अपने आप सहेजे नहीं जाते।
 
 वेब तालिका आयात में दिया गया सार्वजनिक पृष्ठ URL अस्थायी रूप से पृष्ठ पढ़ने के लिए सर्वर को भेजा जाता है। गंतव्य साइट को लॉगिन जानकारी या कुकी नहीं भेजी जाती। अनुरोध सीमित करने के लिए सर्वर मेमोरी में अस्थायी IP हैश उपयोग होता है; इस सूची में मूल IP नहीं सहेजा जाता।
+
+फ़ोटो और स्कैन किए गए PDF का ऑप्टिकल कैरेक्टर रिकग्निशन (OCR) ब्राउज़र में चलता है। ज़रूरी भाषा मॉडल उपलब्ध न होने पर ब्राउज़र उसे GitHub से डाउनलोड करता है और डिवाइस पर कैश कर सकता है। इस अनुरोध में आपकी फ़ाइल, उसकी तस्वीरें या पहचाना गया टेक्स्ट शामिल नहीं होता।
 
 ### विज़िटर आँकड़े और बाहर रहने का विकल्प
 
@@ -443,6 +455,8 @@ Google समेत तीसरे पक्ष इस या दूसरी �
 
 يرسل استيراد جداول الويب عنوان الصفحة العامة الذي تدخله إلى الخادم لقراءتها مؤقتًا. لا تُرسل بيانات الدخول أو ملفات الارتباط إلى الموقع المقصود. يُستخدم تجزؤ مؤقت لعنوان IP في ذاكرة الخادم لتحديد الطلبات؛ ولا تحفظ هذه القائمة عنوان IP الأصلي.
 
+يُجري المتصفح التعرّف الضوئي على الحروف (OCR) في الصور وملفات PDF الممسوحة ضوئيًا. إذا لم يتوفر نموذج اللغة، ينزّله المتصفح من GitHub وقد يحفظه في ذاكرة التخزين المؤقت على الجهاز. لا يتضمن طلب التنزيل ملفك أو صوره أو النص المستخرج منه.
+
 ### الإحصاءات والاستبعاد
 
 تخزن الصفحات العادية وأدوات الويب معرّف متصفح عشوائيًا وتاريخ آخر احتساب في localStorage لمنع التكرار. تستخدم مفاتيح التاريخ لكل أداة seoki-tool-day:\<tool\>. يخزن الخادم تجزئة SHA-256 للمعرّف والتاريخ ومعرّف أداة من قائمة مسموحة لحساب الزوار يوميًا وأسبوعيًا وشهريًا للموقع ولكل أداة. تجمع إحصاءات الأداة جميع لغات الواجهة ولا يُحسب التحديث مرتين. لا تخزن واجهة الإحصاءات أسماء أو بريدًا إلكترونيًا أو عناوين IP خامًا أو روابط الصفحات أو محتوى الجداول أو صور الشاشة. لا تُعد المعرّفات المجزأة مجهولة تمامًا. تحفظ إحصاءات البلد أيضًا رمز بلد الاتصال الذي توفره Cloudflare مع تجزئة المعرّف والتاريخ. لا تُحفظ عناوين IP الخام أو المدن أو المواقع الدقيقة في هذه الإحصاءات؛ وقد تؤثر الشبكات الخاصة الافتراضية على تقدير البلد. يخزن المتصفح أيضًا تواريخ آخر احتساب للبلد للموقع والأدوات.
@@ -512,6 +526,8 @@ La traduction compatible utilise des modèles sur l’appareil. Les télécharge
 Les fichiers Word, HWP, Excel, CSV et autres formats pris en charge, ainsi que les images des tableaux, sont traités dans le navigateur. Copier les tableaux et télécharger les fichiers sont des actions de l’utilisateur ; les documents de travail ne sont pas enregistrés automatiquement sur notre serveur.
 
 L’importation de tableaux web envoie l’URL publique saisie au serveur pour lire temporairement la page. Aucune information de connexion ni aucun cookie n’est envoyé au site cible. Une empreinte temporaire de l’IP en mémoire serveur limite les requêtes ; cette liste ne conserve pas l’IP brute.
+
+La reconnaissance optique de caractères (OCR) des photos et des PDF numérisés s’exécute dans le navigateur. Si le modèle de langue est absent, le navigateur le télécharge depuis GitHub et peut le mettre en cache sur l’appareil. La requête ne contient ni votre fichier, ni ses images, ni le texte reconnu.
 
 ### Statistiques et exclusion
 
@@ -583,6 +599,8 @@ Contact confidentialité: [contact@seokiapps.com](mailto:contact@seokiapps.com)
 
 ウェブ表の取り込みでは、入力した公開ページのURLをサーバーへ送り、そのページを一時的に読み取ります。接続先へログイン情報やCookieは送りません。要求数の制限にはサーバーメモリー上の一時的なIPハッシュを使い、その一覧に生のIPは保存しません。
 
+写真やスキャンしたPDFの文字認識（OCR）はブラウザー内で行います。言語モデルがない場合、ブラウザーがGitHubからダウンロードし、端末にキャッシュすることがあります。このダウンロード要求にファイル、画像、認識した文字は含まれません。
+
 ### アクセス統計と除外
 
 通常ページとウェブツールでは重複集計を避けるため、ランダムなブラウザー識別子と最終集計日を localStorage に保存します。ツール別の日付キーには seoki-tool-day:\<tool\> を使います。サーバーには識別子の SHA-256 ハッシュ、日付、許可されたツール識別子を保存し、サイト全体とツール別の日・週・月の訪問者数を計算します。各ツールは全表示言語を合算し、再読み込みは重複集計しません。統計 API は氏名、メール、元の IP、訪問 URL、表の内容、画面画像を保存しません。ハッシュ識別子は完全な匿名情報とは見なしません。 国別の統計にはCloudflareが提供する接続国コードも識別子のハッシュと日付とともに保存します。この統計に元のIP、都市、正確な位置は保存しません。VPNなどにより国の推定が実際の位置と異なる場合があります。サイト全体とツール別の国集計日もブラウザーに保存します。
@@ -652,6 +670,8 @@ Terjemahan yang didukung menggunakan model di perangkat. Unduhan memerlukan konf
 Berkas Word, HWP, Excel, CSV dan format lain yang didukung, termasuk gambar di dalam tabel, diproses di browser. Menyalin tabel hasil konversi dan mengunduh berkas dilakukan pengguna; dokumen kerja tidak otomatis disimpan di server kami.
 
 Impor tabel web mengirim URL halaman publik yang dimasukkan ke server untuk membaca halaman tersebut sementara. Kredensial dan cookie tidak dikirim ke situs tujuan. Hash IP sementara di memori server digunakan untuk membatasi permintaan; daftar ini tidak menyimpan IP mentah.
+
+Pengenalan karakter optik (OCR) untuk foto dan PDF hasil pindai dijalankan di browser. Jika model bahasa belum tersedia, browser mengunduhnya dari GitHub dan dapat menyimpannya di cache perangkat. Permintaan ini tidak menyertakan file, gambar, atau teks yang dikenali.
 
 ### Statistik dan pengecualian
 
