@@ -1,0 +1,22 @@
+MirrorCat wireless input dependencies
+
+LibADB Android 3.1.1, Copyright 2021 Muntashir Al-Islam.
+Used under Apache-2.0 (dual-licensed upstream).
+https://github.com/MuntashirAkon/libadb-android/tree/3.1.1
+
+SPAKE2 Android 2.2.1, Copyright 2021 Muntashir Al-Islam.
+Unmodified library, GNU LGPL version 3.
+Corresponding source, build files and BoringSSL submodule references:
+https://github.com/MuntashirAkon/spake2-java/tree/2.2.1
+https://github.com/MuntashirAkon/spake2-java/archive/refs/tags/2.2.1.zip
+The original library may be replaced when rebuilding with Gradle. Reverse engineering
+of this component for debugging modifications is permitted under its LGPL terms.
+
+Conscrypt Android 2.8.0, The Android Open Source Project, Apache-2.0.
+https://github.com/google/conscrypt/tree/2.8.0
+BoringSSL terms: BORINGSSL-LICENSE.txt. Additional notices and license texts:
+CONSCRYPT-NOTICES.txt, CONSCRYPT-HARMONY.txt, CONSCRYPT-NETTY.txt.
+
+Bouncy Castle 1.81, The Legion of the Bouncy Castle Inc., Bouncy Castle Licence.
+https://www.bouncycastle.org/licence.html
+BC-LICENSE.txt contains the license and copyright notice.
